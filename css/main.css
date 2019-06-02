@@ -49,3 +49,7 @@ ul.default-list li {
 ul.single-line li {
     margin-bottom: 4px;
 }
+div.profile-image {
+  height: 200px;
+  width: 100%;
+}
