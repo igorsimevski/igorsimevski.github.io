@@ -42,6 +42,6 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-.projects li {
+ul.projects li {
     line-height: 1.2em;
 }
