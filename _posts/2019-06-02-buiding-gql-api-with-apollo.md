@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Igor Simevski Blog"
+title: "Building a GQL API with Apillo"
 date: 2019-06-02
 ---
 
