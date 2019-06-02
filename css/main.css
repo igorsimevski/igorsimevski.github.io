@@ -46,3 +46,6 @@ ul.default-list li {
     line-height: 1.5em;
     margin-bottom: 8px;
 }
+ul.single-line li {
+    line-height: 1.5em;
+}
