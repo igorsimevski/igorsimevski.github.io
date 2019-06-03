@@ -4,7 +4,7 @@ body {
     font-family:'Helvetica', 'Arial';
 }
 body nav {
-    background-color:#292c2f;
+	background-color:#292c2f;
 	box-shadow:0 1px 1px #ccc;
 	padding: 20px 40px;
 	height: 80px;
@@ -14,6 +14,10 @@ body nav {
 
 	-webkit-transition:top 0.3s;
 	transition:top 0.3s;
+}
+body nav a {
+    text-decoration: none;
+    color: #ffffff;
 }
 nav ul, footer ul {
     padding: 0px;
