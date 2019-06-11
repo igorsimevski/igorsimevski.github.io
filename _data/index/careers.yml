@@ -52,7 +52,7 @@
     detail: February 2011
     i18n: company_d_date
   job:
-    detail: Laboratory Assistant in Microelectronics
+    detail: "Teaching Assistant. Subject: Microelectronics."
     i18n: company_d_job
   icon: fa-plus-square
 

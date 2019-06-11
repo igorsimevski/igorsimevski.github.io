@@ -16,16 +16,16 @@
     "des": "М-р по електротехника и ИТ."
   },
   "skills":{
-    "my_skills": "Моите вештини"
+    "my_skills": "Мои вештини"
   },
   "projects":{
-    "my_projects": "Моите проекти",
+    "my_projects": "Мои проекти",
     "jalpc": "This project is my project. I use javescript to get repo's information all my repos have only one request.",
     "cpython": "This project is other's project. I use another request to get repo's information.",
     "familycode": "This is another project."
   },
   "career":{
-    "my_career": "Мојата кариера",
+    "my_career": "Моја кариера",
     "nextcode": "Nextcode",
     "nextcode_des": "Now I am in Nextcode and develop website with Python code for genetic analysis.",
     "nextcode_date": "Apr. 2016",
