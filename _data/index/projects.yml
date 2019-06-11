@@ -4,7 +4,7 @@
 - name: (Phone.com) CTI integration in Salesforce, Zoho
   i18n: pdc
   img: /static/assets/img/landing/jekyll.png
-  url: https://google.com
+  url: https://www.phone.com/
   desc: Integration of VOIP services and metadata in various CRM systems. (Click2Call, Real-Time Call Info Display, Call Logging)
 
 - name: Location Dependent Automatic Parking Gate Control
