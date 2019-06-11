@@ -49,12 +49,6 @@
   img: /static/assets/img/landing/java.png
   desc: Web Application - Calculator and Financial Advisor for (but not limited to) mortgages performing complex calculations.
 
-- name: Internal Company Portal
-  i18n: conf
-  url: https://google.com
-  img: /static/assets/img/landing/java.png
-  desc: Web Application based on Atlassian Confluence which included a lot of customizations intended to meet company needs. It included plugins for managing and showing content, conference room planner, employee data organizer, etc.
-
 - name: Healthcare Document Management System
   i18n: tie
   url: https://google.com
@@ -84,3 +78,9 @@
   url: https://google.com
   img: /static/assets/img/landing/nodejs.png
   desc: JavaFx Desktop Application for easy tagging and searching of photos inside your computer
+
+- name: Internal Company Portal
+  i18n: conf
+  url: https://google.com
+  img: /static/assets/img/landing/java.png
+  desc: Web Application based on Atlassian Confluence which included a lot of customizations intended to meet company needs. It included plugins for managing and showing content, conference room planner, employee data organizer, etc.
