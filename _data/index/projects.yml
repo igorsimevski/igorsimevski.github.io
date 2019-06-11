@@ -64,7 +64,7 @@
 - name: Simple Photo Organizer
   i18n: pog
   url: https://google.com
-  img: /static/assets/img/landing/nodejs.png
+  img: /static/assets/img/landing/java.png
   desc: JavaFx Desktop Application for easy tagging and searching of photos inside your computer
 
 - name: LDAP Manager
