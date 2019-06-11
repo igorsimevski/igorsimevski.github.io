@@ -1,9 +1,9 @@
 # links section data
-- last_name: Name 1
+- last_name: H&S 2011 Results
   first_name:
-  desc: CEO
-  website: https://www.google.com
-  email: ceo@google.com
+  desc: Hardware and Software Competition 
+  website: http://www.dee.uns.ac.rs/PastSymp/Ee2017/hs-ns/Results%20H&S%202011.pdf
+  email: dee@uns.ac.rs
 
 - last_name: LN
   first_name: FN
