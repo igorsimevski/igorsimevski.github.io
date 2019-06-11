@@ -27,3 +27,31 @@
     detail: Java Developer
     i18n: company_b_job
   icon: fa-plus-square
+
+- name:
+    detail: Faculty of Electrical Engineering and IT
+    i18n: company_c
+  desc:
+    detail: Developed a C compiler for Dependable processor as a part of M.Sc studies.
+    i18n: company_c_desc
+  date:
+    detail: November 2011
+    i18n: company_c_date
+  job:
+    detail: M.Sc Studies
+    i18n: company_c_job
+  icon: fa-plus-square
+
+- name:
+    detail: Faculty of Electrical Engineering and IT
+    i18n: company_d
+  desc:
+    detail: Received solid science and engineering knowledge base.
+    i18n: company_d_desc
+  date:
+    detail: October 207
+    i18n: company_d_date
+  job:
+    detail: B.Sc Studies
+    i18n: company_d_job
+  icon: fa-plus-square
