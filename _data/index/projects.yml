@@ -61,11 +61,11 @@
   img: /static/assets/img/landing/nodejs.png
   desc: Web Application for Entering and tracking time for all employees with Reporting Mechanisms for time spent by person/project.
 
-- name: Heating System with Thermostat Remote Control
-  i18n: rlb
+- name: Simple Photo Organizer
+  i18n: pog
   url: https://google.com
-  img: /static/assets/img/landing/android.png
-  desc: Android application for remote control of temperature, mode of work, fan speed and additional parameters over Wi-Fi.
+  img: /static/assets/img/landing/nodejs.png
+  desc: JavaFx Desktop Application for easy tagging and searching of photos inside your computer
 
 - name: LDAP Manager
   i18n: ldap
@@ -73,11 +73,11 @@
   img: /static/assets/img/landing/nodejs.png
   desc: Web API for managing LDAP users (add user, change user group, change password)
 
-- name: Simple Photo Organizer
-  i18n: pog
+- name: Heating System with Thermostat Remote Control
+  i18n: rlb
   url: https://google.com
-  img: /static/assets/img/landing/nodejs.png
-  desc: JavaFx Desktop Application for easy tagging and searching of photos inside your computer
+  img: /static/assets/img/landing/android.png
+  desc: Android application for remote control of temperature, mode of work, fan speed and additional parameters over Wi-Fi.
 
 - name: Internal Company Portal
   i18n: conf
