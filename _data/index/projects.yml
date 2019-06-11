@@ -7,11 +7,11 @@
   url: https://www.phone.com/
   desc: Integration of VOIP services and metadata in various CRM systems. (Click2Call, Real-Time Call Info Display, Call Logging)
 
-- name: Location Dependent Automatic Parking Gate Control
-  i18n: apc
-  img: /static/assets/img/landing/android.png
+- name: Real-time Audio processing / HLS streaming server
+  i18n: hls
   url: https://google.com
-  desc: System for initiating gate opening depending on proximity to location. The system consists of Android application and Server managing location entries and call points.
+  img: /static/assets/img/landing/bash.png
+  desc: Real-time Audio processing / HLS streaming server fully developed with Bash and streamed by Nginx.
 
 - name: C Compiler for Dependable Processor
   i18n: cc
@@ -19,17 +19,17 @@
   img: /static/assets/img/landing/c.png
   desc: C Compiler developed with Java programming language and JavaCC Parser Generator. Developed own parser with help of JavaCC. The compiler’s output is assembly code for a dependable processor with an original instruction set developed by IHP Institute for High Performance Microelectronics in Frankfurt (Oder).
 
-- name: Off-grid electrical system with Remote Control of Electric Devices
-  i18n: sunb
-  url: https://google.com
-  img: /static/assets/img/landing/android.png
-  desc: Android application for Remote control of electric devices over Bluetooth Low Energy protocol. The off-grid system is powered by a battery charged by Sun collectors.
+- name: ESA Disaster Charter
+  i18n: esa
+  url: https://disasterscharter.org/
+  img: /static/assets/img/landing/java.png
+  desc: Web Application for reporting disasters around the World. Customer decided to use Liferay CMS for adding and managing content. I participated in developing scripts for migrating content from an older platform to Liferay. I also developed additional customer-specific customizations regarding the workflow of reporting a disaster, developed specific views using Liferay Portlets.
 
-- name: Real-time Audio processing / HLS streaming server
-  i18n: hls
+- name: Location Dependent Automatic Parking Gate Control
+  i18n: apc
+  img: /static/assets/img/landing/android.png
   url: https://google.com
-  img: /static/assets/img/landing/bash.png
-  desc: Real-time Audio processing / HLS streaming server fully developed with Bash and streamed by Nginx.
+  desc: System for initiating gate opening depending on proximity to location. The system consists of Android application and Server managing location entries and call points.
 
 - name: Real-time Event Report System​ 
   i18n: rte
@@ -37,11 +37,11 @@
   img: /static/assets/img/landing/android.png
   desc: A system that unifies event reporting to Police, Fire Departments and First Aid Medical departments. The system consists of Android application for Reporting real-time events (accidents, thefts, fires, medical emergencies, etc...) and Server for receiving and managing the events.
 
-- name: ESA Disaster Charter
-  i18n: esa
+- name: Off-grid electrical system with Remote Control of Electric Devices
+  i18n: sunb
   url: https://google.com
-  img: /static/assets/img/landing/java.png
-  desc: Web Application for reporting disasters around the World. Customer decided to use Liferay CMS for adding and managing content. I participated in developing scripts for migrating content from an older platform to Liferay. I also developed additional customer-specific customizations regarding the workflow of reporting a disaster, developed specific views using Liferay Portlets.
+  img: /static/assets/img/landing/android.png
+  desc: Android application for Remote control of electric devices over Bluetooth Low Energy protocol. The off-grid system is powered by a battery charged by Sun collectors.
 
 - name: UBS Financial Advisory
   i18n: ubs
