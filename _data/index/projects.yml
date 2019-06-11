@@ -36,3 +36,27 @@
   url: https://google.com
   img: /static/assets/img/landing/android.png
   desc: A system that unifies event reporting to Police, Fire Departments and First Aid Medical departments. The system consists of Android application for Reporting real-time events (accidents, thefts, fires, medical emergencies, etc...) and Server for receiving and managing the events.
+
+- name: ESA Disaster Charter
+  i18n: esa
+  url: https://google.com
+  img: /static/assets/img/landing/java.png
+  desc: Web Application for reporting disasters around the World. Customer decided to use Liferay CMS for adding and managing content. I participated in developing scripts for migrating content from an older platform to Liferay. I also developed additional customer-specific customizations regarding the workflow of reporting a disaster, developed specific views using Liferay Portlets.
+
+- name: UBS Financial Advisory
+  i18n: ubs
+  url: https://google.com
+  img: /static/assets/img/landing/java.png
+  desc: Web Application - Calculator and Financial Advisor for (but not limited to) mortgages performing complex calculations.
+
+- name: Internal Company Portal
+  i18n: conf
+  url: https://google.com
+  img: /static/assets/img/landing/java.png
+  desc: Web Application based on Atlassian Confluence which included a lot of customizations intended to meet company needs. It included plugins for managing and showing content, conference room planner, employee data organizer, etc.
+
+- name: Healthcare Document Management System
+  i18n: conf
+  url: https://google.com
+  img: /static/assets/img/landing/java.png
+  desc: Web Application for organizing hospital data for patients from different hospitals in Switzerland.
