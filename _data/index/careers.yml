@@ -4,7 +4,7 @@
     detail: Sentice Tech LLC
     i18n: company_a
   desc:
-    detail: I worked at Sentice Tech ...
+    detail: "I started working as one of the first employees in Sentice Tech LLC, where besides leading several projects in several technologies, I am also involved in the setup and maintenance of all internal network and system architecture of the company."
     i18n: company_a_desc
   date:
     detail: August 2015
@@ -18,7 +18,7 @@
     detail: Netcetera AG
     i18n: company_b
   desc:
-    detail: I worked at Netcetera AG ...
+    detail: "I worked at Netcetera AG in Skopje, where I was involved in several Java EE projects using various Java techonlogies, some of which: Spring, Hibernate, JDBC, Servlets, JSP, Struts, etc. Gained valuable knowledge."
     i18n: company_b_desc
   date:
     detail: June 2012
@@ -32,7 +32,7 @@
     detail: Faculty of Electrical Engineering and IT
     i18n: company_c
   desc:
-    detail: Developed a C compiler for Dependable processor as a part of M.Sc. studies.
+    detail: Developed a C compiler for Dependable processor as a part of M.Sc. Thesis.
     i18n: company_c_desc
   date:
     detail: November 2011
@@ -46,13 +46,13 @@
     detail: Faculty of Electrical Engineering and IT
     i18n: company_d
   desc:
-    detail: Assisting students in finishing laboratory tasks.
+    detail: "Assisting students in finishing laboratory tasks. Subject: Mictoelectronics."
     i18n: company_d_desc
   date:
     detail: February 2011
     i18n: company_d_date
   job:
-    detail: "Teaching Assistant. Subject: Microelectronics."
+    detail: Teaching Assistant
     i18n: company_d_job
   icon: fa-plus-square
 
