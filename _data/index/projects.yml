@@ -5,7 +5,7 @@
   i18n: pdc
   img: /static/assets/img/landing/nodejs.png
   url: https://www.phone.com/
-  desc: Integration of VOIP services and metadata in various CRM systems. (Click2Call, Real-Time Call Info Display, Call Logging)
+  desc: Integration of VOIP services and metadata in various CRM systems. (Click2Call, Real-Time Call Info Display, Call Logging).
 
 - name: Real-time Audio processing / HLS streaming server
   i18n: hls
@@ -65,13 +65,13 @@
   i18n: pog
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: JavaFx Desktop Application for easy tagging and searching of photos inside your computer
+  desc: JavaFx Desktop Application for easy tagging and searching of photos inside your computer.
 
 - name: LDAP Manager
   i18n: ldap
   url: https://google.com
   img: /static/assets/img/landing/nodejs.png
-  desc: Web API for managing LDAP users (add user, change user group, change password)
+  desc: Web API for managing LDAP users (add user, change user group, change password).
 
 - name: Heating System with Thermostat Remote Control
   i18n: rlb
