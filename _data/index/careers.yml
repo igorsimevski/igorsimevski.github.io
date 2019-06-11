@@ -32,13 +32,13 @@
     detail: Faculty of Electrical Engineering and IT
     i18n: company_c
   desc:
-    detail: Developed a C compiler for Dependable processor as a part of M.Sc studies.
+    detail: Developed a C compiler for Dependable processor as a part of M.Sc. studies.
     i18n: company_c_desc
   date:
     detail: November 2011
     i18n: company_c_date
   job:
-    detail: M.Sc Studies
+    detail: M.Sc. Studies
     i18n: company_c_job
   icon: fa-plus-square
 
@@ -66,6 +66,6 @@
     detail: October 2007
     i18n: company_e_date
   job:
-    detail: B.Sc Studies
+    detail: B.Sc. Studies
     i18n: company_e_job
   icon: fa-plus-square
