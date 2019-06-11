@@ -16,7 +16,7 @@
 
 - name: C Compiler for Dependable Processor
   i18n: cc
-  url: https://google.com
+  url: https://www.ihp-microelectronics.com/en/start.html
   img: /static/assets/img/landing/google.png
   desc: C Compiler developed with Java programming language and JavaCC Parser Generator. Developed own parser with help of JavaCC. The compiler’s output is assembly code for a dependable processor with an original instruction set developed by IHP Institute for High Performance Microelectronics in Frankfurt (Oder).
 
