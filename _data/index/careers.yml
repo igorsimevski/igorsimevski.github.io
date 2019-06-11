@@ -46,12 +46,26 @@
     detail: Faculty of Electrical Engineering and IT
     i18n: company_d
   desc:
-    detail: Received solid science and engineering knowledge base.
+    detail: Assisting students in finishing laboratory tasks.
     i18n: company_d_desc
   date:
-    detail: October 207
+    detail: February 2011
     i18n: company_d_date
   job:
-    detail: B.Sc Studies
+    detail: Laboratory Assistant in Microelectronics
     i18n: company_d_job
+  icon: fa-plus-square
+
+- name:
+    detail: Faculty of Electrical Engineering and IT
+    i18n: company_e
+  desc:
+    detail: Received solid science and engineering knowledge base.
+    i18n: company_e_desc
+  date:
+    detail: October 2007
+    i18n: company_e_date
+  job:
+    detail: B.Sc Studies
+    i18n: company_e_job
   icon: fa-plus-square
