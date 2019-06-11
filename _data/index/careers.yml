@@ -7,7 +7,7 @@
     detail: I worked at Sentice Tech ...
     i18n: company_a_desc
   date:
-    detail: August. 2015
+    detail: August 2015
     i18n: company_a_date
   job:
     detail: Senior Software Developer
@@ -21,7 +21,7 @@
     detail: I worked at Netcetera AG ...
     i18n: company_b_desc
   date:
-    detail: Jun. 2012
+    detail: June 2012
     i18n: company_b_date
   job:
     detail: Java Developer
