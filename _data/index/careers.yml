@@ -46,7 +46,7 @@
     detail: Faculty of Electrical Engineering and IT
     i18n: company_d
   desc:
-    detail: "Assisting students in finishing laboratory tasks. Subject: Mictoelectronics."
+    detail: "Assisted students in finishing laboratory tasks. Worked with PIC16F877a microcontroller. Subject: Mictoelectronics."
     i18n: company_d_desc
   date:
     detail: February 2011
