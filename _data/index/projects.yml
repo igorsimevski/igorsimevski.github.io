@@ -56,7 +56,31 @@
   desc: Web Application based on Atlassian Confluence which included a lot of customizations intended to meet company needs. It included plugins for managing and showing content, conference room planner, employee data organizer, etc.
 
 - name: Healthcare Document Management System
-  i18n: conf
+  i18n: tie
   url: https://google.com
   img: /static/assets/img/landing/java.png
   desc: Web Application for organizing hospital data for patients from different hospitals in Switzerland.
+
+- name: Time Tracker
+  i18n: tt
+  url: https://google.com
+  img: /static/assets/img/landing/nodejs.png
+  desc: Web Application for Entering and tracking time for all employees with Reporting Mechanisms for time spent by person/project.
+
+- name: Heating System with Thermostat Remote Control
+  i18n: rlb
+  url: https://google.com
+  img: /static/assets/img/landing/android.png
+  desc: Android application for remote control of temperature, mode of work, fan speed and additional parameters over Wi-Fi.
+
+- name: LDAP Manager
+  i18n: ldap
+  url: https://google.com
+  img: /static/assets/img/landing/nodejs.png
+  desc: Web API for managing LDAP users (add user, change user group, change password)
+
+- name: Simple Photo Organizer
+  i18n: pog
+  url: https://google.com
+  img: /static/assets/img/landing/nodejs.png
+  desc: JavaFx Desktop Application for easy tagging and searching of photos inside your computer
