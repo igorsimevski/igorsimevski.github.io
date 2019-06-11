@@ -3,23 +3,23 @@
     "title": "Igor's blog"
   },
   "nav":{
-    "home": "Home",
-    "about_me": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "career": "Career",
-    "blog": "Blog",
-    "link": "Link"
+    "home": "Дома",
+    "about_me": "За",
+    "skills": "Вештини",
+    "projects": "Проекти",
+    "career": "Кариера",
+    "blog": "Блог",
+    "link": "Линк"
   },
   "about_me":{
-    "about_me": "About Me",
-    "des": "I am M.Sc. in Electrical Engineering and IT and a Technical Lead."
+    "about_me": "За мене",
+    "des": "М-р по електротехника и ИТ."
   },
   "skills":{
-    "my_skills": "My Skills"
+    "my_skills": "Моите вештини"
   },
   "projects":{
-    "my_projects": "My Projects",
+    "my_projects": "Моите проекти",
     "jalpc": "This project is my project. I use javescript to get repo's information all my repos have only one request.",
     "cpython": "This project is other's project. I use another request to get repo's information.",
     "familycode": "This is another project."
@@ -44,10 +44,10 @@
     "college_job": "Student"
   },
   "blog":{
-    "my_blog": "My Blog"
+    "my_blog": "Мојот Блог"
   },
   "link":{
-    "link": "Link",
+    "link": "Линк",
     "view": "views"
   }
 
