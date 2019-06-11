@@ -11,8 +11,7 @@
   i18n: apc
   img: /static/assets/img/landing/python.png
   url: https://google.com
-  desc: System for initiating gate opening depending on proximity to location.
-  The system consists of Android application and Server managing location entries and call points.
+  desc: System for initiating gate opening depending on proximity to location. The system consists of Android application and Server managing location entries and call points.
 
 - name: C Compiler for Dependable Processor
   i18n: cc
