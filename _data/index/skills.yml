@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects:    GitHub, Java, Android, NodeJS, HTML5, Javascript, Machine Learing, Python, Docker, AWS Lambda, Golang
-percentage: 100,    80,   80,      90,     65,    80,         30,              30,     50,     60,         50
+aspects:    GitHub, Java, Android, NodeJS, HTML5, Javascript, Machine Learing, Python, Docker, AWS Lambda, Golang, MySQL
+percentage: 100,    80,   80,      90,     65,    80,         30,              30,     50,     60,         50,     60
