@@ -90,3 +90,9 @@
   url: https://slideplayer.com/slide/695843/
   img: /static/assets/img/landing/c.png
   desc: The system provides 3D path mapping. Involves a robot sending data via Bluetooth to PC, which draws the robot's real-time 3D path.
+
+- name: Autonomous Research of Unknown Terrain
+  i18n: hwsw2011
+  url: http://en.feit.ukim.edu.mk/news/a-team-from-feeit-won-the-gold-medal-at-the-7th-international-contest-hardware-software-h-s-2011-in-novi-sad-serbia
+  img: /static/assets/img/landing/c.png
+  desc: Realization of a system for autonomous research of unknown terrain, akin to the Mars Rover. The system was comprised of an RP6 robot, RFID reader, GPRS modem, gyroscope, dsPIC microcontroller and a Personal Computer.
