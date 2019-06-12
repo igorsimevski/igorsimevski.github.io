@@ -20,9 +20,21 @@
   },
   "projects":{
     "my_projects": "Мои проекти",
-    "jalpc": "This project is my project. I use javescript to get repo's information all my repos have only one request.",
-    "cpython": "This project is other's project. I use another request to get repo's information.",
-    "familycode": "This is another project."
+    "pdc": "Проект 1",
+    "hls": "Проект 2",
+    "cc": "Проект 3",
+    "esa": "Проект 4",
+    "apc": "Проект 5",
+    "rte": "Проект 6",
+    "sunb": "Проект 7",
+    "ubs": "Проект 8",
+    "tie": "Проект 9",
+    "tt": "Проект 10",
+    "pog": "Проект 11",
+    "ldap": "Проект 12",
+    "rlb": "Проект 13",
+    "conf": "Проект 14",
+    "hwsw2010": "Проект 15"
   },
   "career":{
     "my_career": "Моја кариера",
