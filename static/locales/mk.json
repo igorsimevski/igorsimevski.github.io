@@ -28,18 +28,8 @@
     "my_career": "Моја кариера",
     "sentice": "Сентице Тецх ДООЕЛ",
     "sentice_desc": "Меѓу првите вработени.",
-    "netease": "Netease Game",
-    "netease_des": "In Netease game, I learned game service system and use Python code for ops.",
-    "netease_date": "Jun. 2015",
-    "netease_job": "Dev Ops",
-    "ucloud": "Ucloud",
-    "ucloud_des": "In ucloud, I started to deal with servers and Linux system and use shell scripts to manage massive server.",
-    "ucloud_date": "Sep. 2013",
-    "ucloud_job": "Dev Ops",
-    "college": "Graduation",
-    "college_des": "At July 2013,I graduated from college and started my IT technology tour.",
-    "college_date": "Jul. 2013",
-    "college_job": "Student"
+    "netcetera": "Нетцетера ДООЕЛ",
+    "netease_desc": "Мојата професионална кариера ја започнав во Нетцетера."
   },
   "blog":{
     "my_blog": "Мојот Блог"
