@@ -23,7 +23,7 @@
   i18n: esa
   url: https://disasterscharter.org/
   img: /static/assets/img/landing/java.png
-  desc: Web Application for reporting disasters around the World. Customer decided to use Liferay CMS for adding and managing content. I participated in developing scripts for migrating content from an older platform to Liferay. I also developed additional customer-specific customizations regarding the workflow of reporting a disaster, developed specific views using Liferay Portlets.
+  desc: Web Application for reporting disasters around the World. Customer decided to use Liferay CMS for adding and managing content. I also developed additional customer-specific customizations regarding the workflow of reporting a disaster, developed specific views using Liferay Portlets.
 
 - name: Location Dependent Automatic Parking Gate Control
   i18n: apc
