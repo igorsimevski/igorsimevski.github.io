@@ -6,22 +6,16 @@
   email: dee@uns.ac.rs
 
 - last_name: H&S 2011
-  first_name:
+  first_name: FEEIT SKopje
   desc: Gold Medal Announcement
   website: http://en.feit.ukim.edu.mk/news/a-team-from-feeit-won-the-gold-medal-at-the-7th-international-contest-hardware-software-h-s-2011-in-novi-sad-serbia
-  email: dee@uns.ac.rs
+  email: informacii@feit.ukim.edu.mk
 
 - last_name: H&S 2011 Official Results
   first_name:
   desc: Hardware and Software Competition 
   website: http://www.dee.uns.ac.rs/PastSymp/Ee2017/hs-ns/Results%20H&S%202011.pdf
   email: dee@uns.ac.rs
-
-- last_name: FEEIT Skopje
-  first_name:
-  desc: Faculty of Electrical Engineering and IT
-  website: http://www.feit.ukim.edu.mk/
-  email: informacii@feit.ukim.edu.mk
 
 - last_name: Netcetera AG
   first_name:
