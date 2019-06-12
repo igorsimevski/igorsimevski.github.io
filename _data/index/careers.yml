@@ -30,7 +30,7 @@
 
 - name:
     detail: Faculty of Electrical Engineering and IT, UKIM, Skopje
-    i18n: feit_msc
+    i18n: feit
   desc:
     detail: Continued my studies involving several subjects from the fields of SoC and Nanoelectronics. Developed a C compiler for Dependable processor as a part of M.Sc. Thesis.
     i18n: feit_msc_desc
@@ -44,7 +44,7 @@
 
 - name:
     detail: Faculty of Electrical Engineering and IT, UKIM, Skopje
-    i18n: feit_ta
+    i18n: feit
   desc:
     detail: "Assisted students in finishing laboratory tasks. Worked with PIC16F877a microcontroller. Subject: Mictoelectronics."
     i18n: feit_ta_desc
@@ -58,7 +58,7 @@
 
 - name:
     detail: Faculty of Electrical Engineering and IT, UKIM, Skopje
-    i18n: feit_bsc
+    i18n: feit
   desc:
     detail: Received solid science and engineering knowledge base. Participated in few competitions for the Faculty, one of which "Hardware & Software" international competition in 2011 when our team won the first prize.
     i18n: feit_bsc_desc
