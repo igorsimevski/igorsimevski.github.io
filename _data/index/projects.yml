@@ -43,7 +43,7 @@
   img: /static/assets/img/landing/android.png
   desc: Android application for Remote control of electric devices over Bluetooth Low Energy protocol. The off-grid system is powered by a battery charged by Sun collectors.
 
-- name: UBS Financial Advisory
+- name: Financial Advisory
   i18n: ubs
   url: https://google.com
   img: /static/assets/img/landing/java.png
