@@ -4,6 +4,3 @@
 # Images are expected to be located in `static/assets/img/`.
 - src: landing/header_one.jpg
   title: Bringing IT to life
-
-- src: landing/header_two.jpg
-  title: Bringing IT to life
