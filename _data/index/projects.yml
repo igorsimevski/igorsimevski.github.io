@@ -84,3 +84,9 @@
   url: https://google.com
   img: /static/assets/img/landing/java.png
   desc: Web Application based on Atlassian Confluence which included a lot of customizations intended to meet company needs. It included plugins for managing and showing content, conference room planner, employee data organizer, etc.
+
+- name: Autonomous System For 3D Layout Recording
+  i18n: conf
+  url: https://slideplayer.com/slide/695843/
+  img: /static/assets/img/landing/c.png
+  desc: The system provides 3D path mapping. Involves a robot sending data via Bluetooth to PC, which draws the robot's real-time 3D path.
