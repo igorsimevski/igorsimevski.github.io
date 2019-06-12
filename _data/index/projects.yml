@@ -11,7 +11,7 @@
   i18n: hls
   url: https://google.com
   img: /static/assets/img/landing/bash.png
-  desc: Real-time Audio processing / HLS streaming server fully developed with Bash and streamed by Nginx.
+  desc: Real-time Audio processing / HLS Streaming Server fully developed with Bash and streamed by Nginx.
 
 - name: C Compiler for Dependable Processor
   i18n: cc
@@ -37,7 +37,7 @@
   img: /static/assets/img/landing/android.png
   desc: A system that unifies event reporting to Police, Fire Departments and First Aid Medical departments. The system consists of Android application for Reporting real-time events (accidents, thefts, fires, medical emergencies, etc...) and Server for receiving and managing the events.
 
-- name: Off-grid electrical system with Remote Control of Electric Devices
+- name: Off-grid Electrical System with Remote Control of Electric Devices
   i18n: sunb
   url: https://google.com
   img: /static/assets/img/landing/android.png
@@ -47,7 +47,7 @@
   i18n: ubs
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: Web Application - Calculator and Financial Advisor for (but not limited to) mortgages performing complex calculations.
+  desc: Web Application - Calculator and Financial Advisor for (but not limited to) mortgages, performing complex calculations.
 
 - name: Healthcare Document Management System
   i18n: tie
@@ -69,7 +69,7 @@
 
 - name: LDAP Manager
   i18n: ldap
-  url: https://google.com
+  url: https://www.openldap.org/
   img: /static/assets/img/landing/nodejs.png
   desc: Web API for managing LDAP users (add user, change user group, change password).
 
@@ -81,12 +81,12 @@
 
 - name: Internal Company Portal
   i18n: conf
-  url: https://google.com
+  url: https://www.atlassian.com/software/confluence
   img: /static/assets/img/landing/java.png
-  desc: Web Application based on Atlassian Confluence which included a lot of customizations intended to meet company needs. It included plugins for managing and showing content, conference room planner, employee data organizer, etc.
+  desc: Web Application based on Atlassian Confluence which includes a lot of customizations intended to meet company needs. It included plugins for managing and showing content, conference room planner, employee data organizer, etc.
 
 - name: Autonomous System For 3D Layout Recording
-  i18n: conf
+  i18n: hwsw2010
   url: https://slideplayer.com/slide/695843/
   img: /static/assets/img/landing/c.png
   desc: The system provides 3D path mapping. Involves a robot sending data via Bluetooth to PC, which draws the robot's real-time 3D path.
