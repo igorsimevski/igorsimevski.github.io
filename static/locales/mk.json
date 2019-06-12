@@ -33,9 +33,9 @@
     "pog": "JavaFx Десктоп апликација за лесно тагирање и пребарување на фотографиите во вашиот компјутер.",
     "ldap": "Веб интерфејс за менаџирање на LDAP корисници (Додавање корисник, менување атрибути, менување шифра).",
     "rlb": "Андроид апликација за далечинсо управување на температура, режим на работа, брзина на вентилатор и дополнителни параметри преку Wi-Fi.",
-    "conf": "Web Application based on Atlassian Confluence which includes a lot of customizations intended to meet company needs. It included plugins for managing and showing content, conference room planner, employee data organizer, etc.",
-    "hwsw2010": "The system provides 3D path mapping. Involves a robot sending data via Bluetooth to PC, which draws the robot's real-time 3D path.",
-    "hwsw2011": "Realization of a system for autonomous research of unknown terrain, akin to the Mars Rover. The system was comprised of an RP6 robot, RFID reader, GPRS modem, gyroscope, dsPIC microcontroller and a Personal Computer."
+    "conf": "Веб апликација базирана на Atlassian Confluence со специјализација за потребите на компанијата. Вклучува плагини за управување и приказ на содржина, планер за состаноци, организер на податоци, и сл.",
+    "hwsw2010": "Системот овозможува 3Д мапирање на патека. Вклучува робот кој што праќа податоци преку Bluetooth до персонален компјутер, којшто ја прикажува патека на движење на роботот.",
+    "hwsw2011": "Систем за автономно истражување на непознат терен по моделот на Марс роверот. Системот се состои од RP6 робот, RFID читач, GPRS модем, жироскоп, dsPIC микроконтролер и персонален компјутер."
   },
   "career":{
     "my_career": "Моја кариера",
