@@ -27,7 +27,7 @@
   "career":{
     "my_career": "Моја кариера",
     "sentice": "Сентице Тецх ДООЕЛ",
-    "sentice_des": "Меѓу првите вработени.",
+    "sentice_desc": "Меѓу првите вработени.",
     "netease": "Netease Game",
     "netease_des": "In Netease game, I learned game service system and use Python code for ops.",
     "netease_date": "Jun. 2015",
