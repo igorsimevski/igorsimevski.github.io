@@ -2,16 +2,16 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
     detail: Sentice Tech LLC
-    i18n: company_a
+    i18n: sentice
   desc:
     detail: "I started working as one of the first employees in Sentice Tech LLC, where besides leading several projects in several technologies, I am also involved in the setup and maintenance of all internal network and system architecture of the company."
-    i18n: company_a_desc
+    i18n: sentice_desc
   date:
     detail: August 2015
-    i18n: company_a_date
+    i18n: sentice_date
   job:
     detail: Senior Software Developer, Technical Lead & Sys Admin
-    i18n: company_a_job
+    i18n: sentice_job
   icon: fa-plus-square
 
 - name:
