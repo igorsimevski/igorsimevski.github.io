@@ -50,10 +50,10 @@
   desc: Web Application - Calculator and Financial Advisor Tool for mortgages, performing complex calculations.
 
 - name: Withhold Tax
-  i18n: ubs
+  i18n: wht
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: Web Application - Calculator for calculating withold tax of many different types of transactions.
+  desc: Web Application - Calculator for calculating withold tax of different types of transactions in different countries.
 
 - name: Healthcare Document Management System
   i18n: tie
