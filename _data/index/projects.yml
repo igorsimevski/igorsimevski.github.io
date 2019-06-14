@@ -5,100 +5,83 @@
   i18n: pdc
   img: /static/assets/img/landing/nodejs.png
   url: https://www.phone.com/
-  desc: 
 
 - name: Real-time Audio processing / HLS streaming server
   i18n: hls
   url: https://google.com
   img: /static/assets/img/landing/bash.png
-  desc: 
 
 - name: C Compiler for Dependable Processor
   i18n: cc
   url: https://www.ihp-microelectronics.com/en/start.html
   img: /static/assets/img/landing/c.png
-  desc: 
 
 - name: Disaster Charter
   i18n: esa
   url: https://disasterscharter.org/
   img: /static/assets/img/landing/java.png
-  desc: 
 
 - name: Location Dependent Automatic Parking Gate Control
   i18n: apc
   img: /static/assets/img/landing/android.png
   url: https://google.com
-  desc: 
 
 - name: Real-time Event Report System​ 
   i18n: rte
   url: https://google.com
   img: /static/assets/img/landing/android.png
-  desc: 
 
 - name: Off-grid Electrical System with Remote Control of Electric Devices
   i18n: sunb
   url: https://google.com
   img: /static/assets/img/landing/android.png
-  desc: 
 
 - name: Financial Advisor
   i18n: ubs
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: 
 
 - name: Withhold Tax
   i18n: wht
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: 
 
 - name: Healthcare Document Management System
   i18n: tie
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: 
 
 - name: Time Tracker
   i18n: tt
   url: https://google.com
   img: /static/assets/img/landing/nodejs.png
-  desc: 
 
 - name: Simple Photo Organizer
   i18n: pog
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: 
 
 - name: LDAP Manager
   i18n: ldap
   url: https://www.openldap.org/
   img: /static/assets/img/landing/nodejs.png
-  desc: 
 
 - name: Heating System with Thermostat Remote Control
   i18n: rlb
   url: https://google.com
   img: /static/assets/img/landing/android.png
-  desc: 
 
 - name: Internal Company Portal
   i18n: conf
   url: https://www.atlassian.com/software/confluence
   img: /static/assets/img/landing/java.png
-  desc: 
 
 - name: Autonomous System For 3D Layout Recording
   i18n: hwsw2010
   url: https://slideplayer.com/slide/695843/
   img: /static/assets/img/landing/c.png
-  desc: 
 
 - name: Autonomous Research of Unknown Terrain
   i18n: hwsw2011
   url: http://en.feit.ukim.edu.mk/news/a-team-from-feeit-won-the-gold-medal-at-the-7th-international-contest-hardware-software-h-s-2011-in-novi-sad-serbia
   img: /static/assets/img/landing/c.png
-  desc: 
