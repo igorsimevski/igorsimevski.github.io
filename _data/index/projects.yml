@@ -43,11 +43,17 @@
   img: /static/assets/img/landing/android.png
   desc: Android application for Remote control of electric devices over Bluetooth Low Energy protocol. The off-grid system is powered by a battery charged by Sun collectors.
 
-- name: Financial Advisory
+- name: Financial Advisor
   i18n: ubs
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: Web Application - Calculator and Financial Advisor for (but not limited to) mortgages, performing complex calculations.
+  desc: Web Application - Calculator and Financial Advisor Tool for mortgages, performing complex calculations.
+
+- name: Withhold Tax
+  i18n: ubs
+  url: https://google.com
+  img: /static/assets/img/landing/java.png
+  desc: Web Application - Calculator for calculating withold tax of many different types of transactions.
 
 - name: Healthcare Document Management System
   i18n: tie
