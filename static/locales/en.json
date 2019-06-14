@@ -29,7 +29,7 @@
     "sunb": "Android application for Remote control of electric devices over Bluetooth Low Energy protocol. The off-grid system is powered by a battery charged by Sun collectors.",
     "ubs": "Web Application - Calculator and Financial Advisor for (but not limited to) mortgages, performing complex calculations.",
     "wht": "Web Application - Calculator for calculating withold tax of different types of transactions in different countries.",
-    "tie": "Web Application for organizing hospital data for patients from different hospitals.",
+    "tie": "Web Application for organizing and sharing hospital data for patients between different hospitals.",
     "tt": "Web Application for Entering and tracking time for all employees with Reporting Mechanisms for time spent by person/project.",
     "pog": "JavaFx Desktop Application for easy tagging and searching of photos inside your computer.",
     "ldap": "Web API for managing LDAP users (add user, change user group, change password).",
