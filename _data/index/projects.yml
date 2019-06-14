@@ -5,100 +5,100 @@
   i18n: pdc
   img: /static/assets/img/landing/nodejs.png
   url: https://www.phone.com/
-  desc: Integration of VOIP services and metadata in various CRM systems. (Click2Call, Real-Time Call Info Display, Call Logging).
+  desc: 
 
 - name: Real-time Audio processing / HLS streaming server
   i18n: hls
   url: https://google.com
   img: /static/assets/img/landing/bash.png
-  desc: Real-time Audio processing / HLS Streaming Server fully developed with Bash and streamed by Nginx.
+  desc: 
 
 - name: C Compiler for Dependable Processor
   i18n: cc
   url: https://www.ihp-microelectronics.com/en/start.html
   img: /static/assets/img/landing/c.png
-  desc: C Compiler developed with Java programming language and JavaCC Parser Generator. Developed own parser with help of JavaCC. The compiler’s output is assembly code for a dependable processor with an original instruction set developed by IHP Institute for High Performance Microelectronics in Frankfurt (Oder).
+  desc: 
 
 - name: Disaster Charter
   i18n: esa
   url: https://disasterscharter.org/
   img: /static/assets/img/landing/java.png
-  desc: Web Application for reporting disasters around the World. Customer decided to use Liferay CMS for adding and managing content. I developed additional customer-specific customizations regarding the workflow of reporting a disaster, developed specific views using Liferay Portlets.
+  desc: 
 
 - name: Location Dependent Automatic Parking Gate Control
   i18n: apc
   img: /static/assets/img/landing/android.png
   url: https://google.com
-  desc: System for initiating gate opening depending on proximity to location. The system consists of Android application and Server managing location entries and call points.
+  desc: 
 
 - name: Real-time Event Report System​ 
   i18n: rte
   url: https://google.com
   img: /static/assets/img/landing/android.png
-  desc: A system that unifies event reporting to Police, Fire Departments and First Aid Medical departments. The system consists of Android application for Reporting real-time events (accidents, thefts, fires, medical emergencies, etc...) and Server for receiving and managing the events.
+  desc: 
 
 - name: Off-grid Electrical System with Remote Control of Electric Devices
   i18n: sunb
   url: https://google.com
   img: /static/assets/img/landing/android.png
-  desc: Android application for Remote control of electric devices over Bluetooth Low Energy protocol. The off-grid system is powered by a battery charged by Sun collectors.
+  desc: 
 
 - name: Financial Advisor
   i18n: ubs
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: Web Application - Calculator and Financial Advisor Tool for mortgages, performing complex calculations.
+  desc: 
 
 - name: Withhold Tax
   i18n: wht
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: Web Application - Calculator for calculating withold tax of different types of transactions in different countries.
+  desc: 
 
 - name: Healthcare Document Management System
   i18n: tie
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: Web Application for organizing hospital data for patients from different hospitals.
+  desc: 
 
 - name: Time Tracker
   i18n: tt
   url: https://google.com
   img: /static/assets/img/landing/nodejs.png
-  desc: Web Application for Entering and tracking time for all employees with Reporting Mechanisms for time spent by person/project.
+  desc: 
 
 - name: Simple Photo Organizer
   i18n: pog
   url: https://google.com
   img: /static/assets/img/landing/java.png
-  desc: JavaFx Desktop Application for easy tagging and searching of photos inside your computer.
+  desc: 
 
 - name: LDAP Manager
   i18n: ldap
   url: https://www.openldap.org/
   img: /static/assets/img/landing/nodejs.png
-  desc: Web API for managing LDAP users (add user, change user group, change password).
+  desc: 
 
 - name: Heating System with Thermostat Remote Control
   i18n: rlb
   url: https://google.com
   img: /static/assets/img/landing/android.png
-  desc: Android application for remote control of temperature, mode of work, fan speed and additional parameters over Wi-Fi.
+  desc: 
 
 - name: Internal Company Portal
   i18n: conf
   url: https://www.atlassian.com/software/confluence
   img: /static/assets/img/landing/java.png
-  desc: Web Application based on Atlassian Confluence which includes a lot of customizations intended to meet company needs. It included plugins for managing and showing content, conference room planner, employee data organizer, etc.
+  desc: 
 
 - name: Autonomous System For 3D Layout Recording
   i18n: hwsw2010
   url: https://slideplayer.com/slide/695843/
   img: /static/assets/img/landing/c.png
-  desc: The system provides 3D path mapping. Involves a robot sending data via Bluetooth to PC, which draws the robot's real-time 3D path.
+  desc: 
 
 - name: Autonomous Research of Unknown Terrain
   i18n: hwsw2011
   url: http://en.feit.ukim.edu.mk/news/a-team-from-feeit-won-the-gold-medal-at-the-7th-international-contest-hardware-software-h-s-2011-in-novi-sad-serbia
   img: /static/assets/img/landing/c.png
-  desc: Realization of a system for autonomous research of unknown terrain, akin to the Mars Rover. The system was comprised of an RP6 robot, RFID reader, GPRS modem, gyroscope, dsPIC microcontroller and a Personal Computer.
+  desc: 
