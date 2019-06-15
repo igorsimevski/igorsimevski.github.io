@@ -1,4 +1,5 @@
 $link-color: #3385FF;
+$success-color: #1c84c6;
 $light-gray1: #e7eaec;
 $light-gray2: #f3f3f4;
 $gray: #676a6c;
@@ -360,7 +361,7 @@ button.dim {
 }
 
 .btn-success.btn-outline {
-  color: #1c84c6;
+  color: $success-color;
 }
 
 .btn-info.btn-outline {
@@ -419,8 +420,8 @@ button.dim {
 }
 
 .btn-success {
-  background-color: #1c84c6;
-  border-color: #1c84c6;
+  background-color: $success-color;
+  border-color: $success-color;
   color: $white;
   &.active {
     background-color: #1a7bb9;
@@ -772,7 +773,7 @@ button.dim:active:before {
 }
 
 .label-success {
-  background-color: #1c84c6;
+  background-color: $success-color;
   color: $white;
 }
 
@@ -1446,7 +1447,7 @@ code {
 }
 
 .panel-success {
-  border-color: #1c84c6;
+  border-color: $success-color;
 }
 
 .panel-info {
@@ -1470,7 +1471,7 @@ code {
 }
 
 .text-success {
-  color: #1c84c6;
+  color: $success-color;
 }
 
 .text-info {
@@ -1736,7 +1737,7 @@ ul.clear-list:first-child {
       color: $link-color;
     }
     .text-primary {
-      color: #1c84c6;
+      color: $success-color;
     }
     .text-info {
       color: #23c6c8;
