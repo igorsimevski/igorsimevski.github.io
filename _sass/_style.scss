@@ -1,3 +1,5 @@
+$link-color: #3385FF;
+
 .landing-page .carousel-caption {
   h1, p {
     text-transform: uppercase;
@@ -110,7 +112,7 @@ h3, h4, h5 {
 }
 
 .nav > li.active {
-  border-left: 4px solid #3385FF;
+  border-left: 4px solid $link-color;
   background: #293846;
 }
 
@@ -153,15 +155,15 @@ h3, h4, h5 {
 }
 
 .navbar-default .landing_link a {
-  background: #3385FF;
+  background: $link-color;
   color: #fff;
   &:hover {
-    background: #3385FF !important;
+    background: $link-color !important;
     color: #fff;
   }
   span.label {
     background: #fff;
-    color: #3385FF;
+    color: $link-color;
   }
 }
 
@@ -227,14 +229,14 @@ body.canvas-menu .nav-header {
     a {
       &:focus, &:hover {
         background: #fff;
-        color: #3385FF;
+        color: $link-color;
       }
     }
     &.active {
       background: #fff;
       border: none;
       > a {
-        color: #3385FF;
+        color: $link-color;
       }
     }
   }
@@ -256,7 +258,7 @@ body.canvas-menu .nav-header {
 }
 
 .top-navigation .navbar-brand {
-  background: #3385FF;
+  background: $link-color;
   color: #fff;
   padding: 15px 25px;
 }
@@ -305,7 +307,7 @@ body.canvas-menu .nav-header {
 }
 
 .navbar-toggle {
-  background-color: #3385FF;
+  background-color: $link-color;
   color: #fff;
   padding: 6px 12px;
   font-size: 14px;
@@ -349,7 +351,7 @@ button.dim {
 }
 
 .btn-primary.btn-outline {
-  color: #3385FF;
+  color: $link-color;
 }
 
 .btn-success.btn-outline {
@@ -369,8 +371,8 @@ button.dim {
 }
 
 .btn-primary {
-  background-color: #3385FF;
-  border-color: #3385FF;
+  background-color: $link-color;
+  border-color: $link-color;
   color: #FFF;
   &.active {
     background-color: #0073B1;
@@ -593,7 +595,7 @@ button.dim {
 .btn-link {
   color: inherit;
   &.active, &:active, &:focus, &:hover {
-    color: #3385FF;
+    color: $link-color;
     text-decoration: none;
   }
   &.active[disabled] {
@@ -760,7 +762,7 @@ button.dim:active:before {
 }
 
 .label-primary {
-  background-color: #3385FF;
+  background-color: $link-color;
   color: #FFF;
 }
 
@@ -862,12 +864,12 @@ button.dim:active:before {
   transition: border-color .15s ease-in-out 0s, box-shadow .15s ease-in-out 0s;
   font-size: 14px;
   &:focus {
-    border-color: #3385FF !important;
+    border-color: $link-color !important;
   }
 }
 
 .has-success .form-control {
-  border-color: #3385FF;
+  border-color: $link-color;
 }
 
 .has-warning .form-control {
@@ -879,7 +881,7 @@ button.dim:active:before {
 }
 
 .has-success .control-label {
-  color: #3385FF;
+  color: $link-color;
 }
 
 .has-warning .control-label {
@@ -1143,7 +1145,7 @@ label.error {
 }
 
 .vertical-date small {
-  color: #3385FF;
+  color: $link-color;
   font-weight: 400;
 }
 
@@ -1214,7 +1216,7 @@ label.error {
 }
 
 .slick-next:before, .slick-prev:before {
-  color: #3385FF !important;
+  color: $link-color !important;
 }
 
 body {
@@ -1430,12 +1432,12 @@ code {
 }
 
 .navy-bg {
-  background-color: #3385FF;
+  background-color: $link-color;
   color: #fff;
 }
 
 .panel-primary {
-  border-color: #3385FF;
+  border-color: $link-color;
 }
 
 .panel-success {
@@ -1455,7 +1457,7 @@ code {
 }
 
 .text-navy {
-  color: #3385FF;
+  color: $link-color;
 }
 
 .text-primary {
@@ -1726,7 +1728,7 @@ ul.clear-list:first-child {
   }
   a {
     .text-navy {
-      color: #3385FF;
+      color: $link-color;
     }
     .text-primary {
       color: #1c84c6;
@@ -1805,7 +1807,7 @@ ul.clear-list:first-child {
   a {
     color: inherit;
     &:hover {
-      color: #3385FF;
+      color: $link-color;
     }
   }
 }
@@ -1964,7 +1966,7 @@ ul.clear-list:first-child {
   text-align: center;
   font-weight: 600;
   a {
-    color: #3385FF;
+    color: $link-color;
     font-weight: 600;
   }
 }
@@ -1988,7 +1990,7 @@ ul.clear-list:first-child {
     font-size: 12px;
     margin-right: 10px;
     &:hover {
-      color: #3385FF;
+      color: $link-color;
     }
   }
 }
@@ -1998,7 +2000,7 @@ ul.clear-list:first-child {
   font-size: 38px;
   color: #e8e9ea;
   &.active {
-    color: #3385FF;
+    color: $link-color;
   }
 }
 
@@ -2355,16 +2357,16 @@ body {
 
 .landing-page {
   span.navy {
-    color: #3385FF;
+    color: $link-color;
   }
   p.text-color {
     color: #676a6c;
   }
   a.navy-link {
-    color: #3385FF;
+    color: $link-color;
     text-decoration: none;
     &:hover {
-      color: #3385FF;
+      color: $link-color;
     }
   }
   section p {
@@ -2380,7 +2382,7 @@ body {
     width: 60px;
     height: 1px;
     margin: 60px auto 0;
-    border-bottom: 2px solid #3385FF;
+    border-bottom: 2px solid $link-color;
   }
   .navbar-wrapper {
     position: fixed;
@@ -2424,16 +2426,16 @@ body {
       .active > a {
         background: 0 0;
         color: #fff;
-        border-top: 6px solid #3385FF;
+        border-top: 6px solid $link-color;
         &:hover {
           background: 0 0;
           color: #fff;
-          border-top: 6px solid #3385FF;
+          border-top: 6px solid $link-color;
         }
       }
       li > a {
         &:focus, &:hover {
-          color: #3385FF;
+          color: $link-color;
           background: inherit;
         }
       }
@@ -2448,14 +2450,14 @@ body {
     }
     .navbar-brand {
       &:focus, &:hover {
-        background: #3385FF;
+        background: $link-color;
         color: #fff;
       }
       color: #fff;
       height: auto;
       display: block;
       font-size: 14px;
-      background: #3385FF;
+      background: $link-color;
       padding: 15px 20px;
       border-radius: 0 0 5px 5px;
       font-weight: 700;
@@ -2465,7 +2467,7 @@ body {
   .navbar-scroll.navbar-default .nav li a {
     color: #676a6c;
     &:hover {
-      color: #3385FF;
+      color: $link-color;
     }
   }
   .navbar-wrapper .navbar.navbar-scroll {
@@ -2600,7 +2602,7 @@ body {
   }
   .features {
     small {
-      color: #3385FF;
+      color: $link-color;
     }
     h2 {
       font-size: 18px;
@@ -2608,12 +2610,12 @@ body {
     }
   }
   .features-icon {
-    color: #3385FF;
+    color: $link-color;
     font-size: 40px;
   }
   .navy-section {
     margin-top: 60px;
-    background: #3385FF;
+    background: $link-color;
     color: #fff;
     padding: 20px 0;
   }
@@ -2628,7 +2630,7 @@ body {
     }
   }
   .social-icon a {
-    background: #3385FF;
+    background: $link-color;
     color: #fff;
     padding: 4px 8px;
     height: 28px;
@@ -2636,7 +2638,7 @@ body {
     display: block;
     border-radius: 50px;
     &:hover {
-      background: #3385FF;
+      background: $link-color;
     }
   }
   .img-small {
@@ -2648,7 +2650,7 @@ body {
     font-size: 14px;
   }
   .testimonials {
-    background-color: #3385FF;
+    background-color: $link-color;
     background-image: url(../assets/img/landing/avatar_all.png);
   }
   .contact {
@@ -2679,12 +2681,12 @@ body {
     color: #fff;
   }
   .btn-primary {
-    background-color: #3385FF;
-    border-color: #3385FF;
+    background-color: $link-color;
+    border-color: $link-color;
     color: #FFF;
     &.active, &:active, &:focus, &:hover {
-      background-color: #3385FF;
-      border-color: #3385FF;
+      background-color: $link-color;
+      border-color: $link-color;
       color: #FFF;
     }
     padding: 10px 20px;
@@ -2761,7 +2763,7 @@ body {
       .nav li a {
         color: #676a6c;
         &:hover {
-          color: #3385FF;
+          color: $link-color;
         }
       }
     }
