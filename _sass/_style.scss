@@ -1,6 +1,7 @@
 $link-color: #3385FF;
 $light-gray1: #e7eaec;
 $light-gray2: #f3f3f4;
+$gray: #676a6c;
 $white: #fff;
 //$link-color: #6d1f1a;
 
@@ -228,7 +229,7 @@ body.canvas-menu .nav-header {
   .nav > li {
     > a {
       padding: 15px 20px;
-      color: #676a6c;
+      color: $gray;
     }
     a {
       &:focus, &:hover {
@@ -1007,7 +1008,7 @@ label.error {
 }
 
 .author-info {
-  color: #676a6c;
+  color: $gray;
   font-size: 11px;
   margin-top: 5px;
 }
@@ -1227,7 +1228,7 @@ body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #2f4050;
   font-size: 13px;
-  color: #676a6c;
+  color: $gray;
   height: 100%;
 }
 
@@ -1791,7 +1792,7 @@ ul.clear-list:first-child {
 }
 
 .file-name small {
-  color: #676a6c;
+  color: $gray;
 }
 
 .vote-icon, .vote-title {
@@ -1856,13 +1857,13 @@ ul.clear-list:first-child {
 
 .project-title a {
   font-size: 14px;
-  color: #676a6c;
+  color: $gray;
   font-weight: 600;
 }
 
 .project-files li a {
   font-size: 11px;
-  color: #676a6c;
+  color: $gray;
   margin-left: 10px;
   line-height: 22px;
 }
@@ -2013,7 +2014,7 @@ body {
     display: none;
   }
   &.landing-page {
-    color: #676a6c;
+    color: $gray;
     font-family: 'Open Sans', helvetica, arial, sans-serif;
     background-color: $white;
   }
@@ -2364,7 +2365,7 @@ body {
     color: $link-color;
   }
   p.text-color {
-    color: #676a6c;
+    color: $gray;
   }
   a.navy-link {
     color: $link-color;
@@ -2469,7 +2470,7 @@ body {
     }
   }
   .navbar-scroll.navbar-default .nav li a {
-    color: #676a6c;
+    color: $gray;
     &:hover {
       color: $link-color;
     }
@@ -2765,7 +2766,7 @@ body {
         color: inherit;
       }
       .nav li a {
-        color: #676a6c;
+        color: $gray;
         &:hover {
           color: $link-color;
         }
