@@ -1,5 +1,6 @@
 $link-color: #3385FF;
 $success-color: #1c84c6;
+$warning-color: #f8ac59;
 $light-gray1: #e7eaec;
 $light-gray2: #f3f3f4;
 $gray: #676a6c;
@@ -369,7 +370,7 @@ button.dim {
 }
 
 .btn-warning.btn-outline {
-  color: #f8ac59;
+  color: $warning-color;
 }
 
 .btn-info.btn-outline:hover, .btn-primary.btn-outline:hover, .btn-success.btn-outline:hover, .btn-warning.btn-outline:hover {
@@ -556,8 +557,8 @@ button.dim {
 }
 
 .btn-warning {
-  background-color: #f8ac59;
-  border-color: #f8ac59;
+  background-color: $warning-color;
+  border-color: $warning-color;
   color: $white;
   &.active {
     background-color: #f7a54a;
@@ -778,12 +779,12 @@ button.dim:active:before {
 }
 
 .label-warning {
-  background-color: #f8ac59;
+  background-color: $warning-color;
   color: $white;
 }
 
 .label-warning-light {
-  background-color: #f8ac59;
+  background-color: $warning-color;
   color: $white;
 }
 
@@ -879,7 +880,7 @@ button.dim:active:before {
 }
 
 .has-warning .form-control {
-  border-color: #f8ac59;
+  border-color: $warning-color;
 }
 
 .has-error .form-control {
@@ -891,7 +892,7 @@ button.dim:active:before {
 }
 
 .has-warning .control-label {
-  color: #f8ac59;
+  color: $warning-color;
 }
 
 .has-error .control-label {
@@ -1455,7 +1456,7 @@ code {
 }
 
 .panel-warning {
-  border-color: #f8ac59;
+  border-color: $warning-color;
 }
 
 .panel-title {
@@ -1479,7 +1480,7 @@ code {
 }
 
 .text-warning {
-  color: #f8ac59;
+  color: $warning-color;
 }
 
 .text-muted {
@@ -1743,7 +1744,7 @@ ul.clear-list:first-child {
       color: #23c6c8;
     }
     .text-warning {
-      color: #F8AC59;
+      color: $warning-color;
     }
   }
 }
