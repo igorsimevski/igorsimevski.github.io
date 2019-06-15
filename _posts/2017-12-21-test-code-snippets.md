@@ -4,7 +4,7 @@ title:  "code snippet test"
 date:   2019-06-11
 desc: "Quick test on writing code snippets in a blog post"
 keywords: "gh-pages,website,blog,easy"
-categories: [HTML]
+categories: [BLOG]
 tags: [code,snippet]
 icon: icon-html
 ---
