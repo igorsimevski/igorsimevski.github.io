@@ -3,6 +3,7 @@ $success-color: #1c84c6;
 $warning-color: #f8ac59;
 $active-color1: #0073b1;
 $active-color2: #1a7bb9;
+$active-color3: #1f90d8;
 $light-gray1: #e7eaec;
 $light-gray2: #f3f3f4;
 $gray: #676a6c;
@@ -452,15 +453,15 @@ button.dim {
     color: $white;
   }
   &.active[disabled] {
-    background-color: #1f90d8;
-    border-color: #1f90d8;
+    background-color: $active-color3;
+    border-color: $active-color3;
   }
   &[disabled] {
-    background-color: #1f90d8;
-    border-color: #1f90d8;
+    background-color: $active-color3;
+    border-color: $active-color3;
     &:active, &:focus, &:hover {
-      background-color: #1f90d8;
-      border-color: #1f90d8;
+      background-color: $active-color3;
+      border-color: $active-color3;
     }
   }
 }
