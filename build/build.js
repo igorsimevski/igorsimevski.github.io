@@ -29,7 +29,13 @@ sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '404.html');
 // compress js files function
 function compressjs(pagename, filename, filelist) {
     console.log('Now compress ' + pagename + ' js files to ' + filename + ' ...')
-    var result = UglifyJS.minify(filelist, {
+    let filesMap = new Map()
+    filelist.forEach(filename => {
+        if (filename) {
+            filesMap[filename.substring(filename.lastIndexOf("/") + 1)] = fs.readFileSync(filename, "utf8")
+        }
+    })
+    var result = UglifyJS.minify(filesMap, {
         mangle: true,
         compress: {
             sequences: true,
