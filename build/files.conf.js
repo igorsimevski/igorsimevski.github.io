@@ -45,7 +45,6 @@ module.exports = {
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'node_modules/animate.css/animate.css',
             'node_modules/components-font-awesome/css/font-awesome.css',
-            'node_modules/font-mfizz/dist/font-mfizz.css',
             'node_modules/gritter/jquery.gritter.css',
             'node_modules/pace-progress/themes/blue/pace-theme-flash.css',
         ]

@@ -6,7 +6,7 @@ desc: "Quick test on writing code snippets in a blog post"
 keywords: "gh-pages,website,blog,easy"
 categories: [BLOG]
 tags: [code,snippet]
-icon: icon-html
+icon: fa-html5
 ---
 
 This is a raw snippet:

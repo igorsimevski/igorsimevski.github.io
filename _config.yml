@@ -21,13 +21,13 @@ author:  # change following line to your infomation.
   twitter_username: # Leave blank if you don't have now
   email: i.simevski@gmail.com  # Leave blank if you don't have now
   cv:  # An online CV can be printed as PDF, leave blank if you don't have now
-  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/
   skill_icon1:
-    - name: icon-nodejs
+    - name: fa-node
     - name: fa-linux
   skill_icon2:
     - name: fa-linux
-    - name: icon-nodejs
+    - name: fa-node
   desc:  # Describe yourself.
 
 # comment
