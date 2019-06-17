@@ -20,6 +20,7 @@ sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/head.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/category.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '404.html');
 
+cp('-f', 'node_modules/components-font-awesome/webfonts/*', 'static/assets/webfonts/');
 
 // compress js files function
 function compressjs(pagename, filename, filelist) {
