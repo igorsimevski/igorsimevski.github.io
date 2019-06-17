@@ -2,7 +2,7 @@
 
 # Website settings
 title: Igor Simevski
-description: Igor's site.
+description: Igor Simevski's personal web-site. Enjoy!
 keywords: Igor,Simevski
 baseurl:  / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://igorsimevski.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
