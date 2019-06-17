@@ -1029,7 +1029,7 @@ label.error {
   }
 }
 
-#vertical-timeline {
+#vertical-timeline, #vertical-timeline2 {
   position: relative;
   padding: 0;
   margin-top: 2em;
@@ -1049,12 +1049,12 @@ label.error {
   float: right;
 }
 
-#vertical-timeline.light-timeline:before {
+#vertical-timeline.light-timeline:before, #vertical-timeline2.light-timeline:before {
   background: $light-gray1;
 }
 
 @media only screen and (min-width: 1170px) {
-  #vertical-timeline.center-orientation {
+  #vertical-timeline.center-orientation, #vertical-timeline2.center-orientation {
     margin-top: 3em;
     margin-bottom: 3em;
     &:before {
