@@ -88,3 +88,15 @@ for (i = 0; i < CSSJSfiles.length; i++) {
         compressjs(CSSJSfiles[i].name, filename, CSSJSfiles[i].list)
     }
 }
+
+// Purify-css
+exec(
+    "node_modules/purify-css/bin/purifycss",
+    "static/assets/app-" + nowDateStr + ".min.css",
+    "static/assets/app-" + nowDateStr + ".min.js",
+    'static/assets/i18-' + nowDateStr + ".min.js",
+    'static/assets/blog-' + nowDateStr + ".min.js",
+    "--min",
+    "--info",
+    "--out",
+    "static/assets/app-" + nowDateStr + ".min.css")
