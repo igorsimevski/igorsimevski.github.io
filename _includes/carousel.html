@@ -18,12 +18,13 @@
             <div
             class="lozad header-back"
             data-background-image="{{ '/static/assets/img/' | prepend: site.baseurl }}{{ site.data.index.banners[0].src }}"
+            style="width: 100%;"
             title="{{ site.data.index.banners[0].title }}">
             </div>
         </div>
 
         {% for banner in site.data.index.banners offset:1 %}
-        <div class="item" style="width: 100%;">
+        <div class="item">
             <div class="container">
                 <div class="carousel-caption">
                 </div>
