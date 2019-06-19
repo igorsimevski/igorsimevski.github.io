@@ -13,7 +13,6 @@ layout: compress
 
 <body id="page-top" class="landing-page">
 
-  {% endif %}
   {% if page.title != 'index' %}
     {% include blog_header.html %}
   {% endif %}
@@ -26,6 +25,7 @@ layout: compress
     {% include index_foot.html %}
   {% endif %}
 
+
   <!-- Main scripts -->
   <script src="{{ "/static/assets/app-20190619.min.js" | prepend: site.baseurl }}"></script>
   {% if site.data.index.projects %}
@@ -33,5 +33,7 @@ layout: compress
   {% endif %}
   {% if site.data.index.language %}
   <script src="{{"/static/assets/i18-20190619.min.js"| prepend: site.baseurl }}"></script>
+  {% endif %}
+
 </body>
 </html>
