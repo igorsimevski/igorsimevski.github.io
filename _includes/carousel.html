@@ -23,7 +23,7 @@
         </div>
 
         {% for banner in site.data.index.banners offset:1 %}
-        <div class="item">
+        <div class="item" style="width: 100%;">
             <div class="container">
                 <div class="carousel-caption">
                 </div>
@@ -32,10 +32,7 @@
                 </div>
             </div>
             <!-- Set background for slide in css -->
-            <div class="lozad header-back" data-background-image="{{ "/static/assets/img/"  | prepend: site.baseurl }}{{ banner.src }}"
-                style="width: 100%;"
-                title="{{ banner.title }}">
-            </div>
+            <div class="lozad header-back" data-background-image="{{ "/static/assets/img/"  | prepend: site.baseurl }}{{ banner.src }}" title="{{ banner.title }}"></div>
         </div>
         {% endfor %}
 
