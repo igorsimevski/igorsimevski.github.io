@@ -9,6 +9,9 @@ $(function(){
 
     $("#search-content").val("");
     $(".search-tool").css("display", visibility);
+    if (visible) {
+      $("#search-content").focus();
+    }
   };
 
   var shouldToggle = function (time) {
