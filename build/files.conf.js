@@ -9,7 +9,6 @@ module.exports = {
             'static/js/bs3-typeahead.js',
             'node_modules/bootstrap/dist/js/bootstrap.js',
             'node_modules/chart.js/dist/Chart.js',
-            'node_modules/chartjs-plugin-deferred/dist/chartjs-plugin-deferred.js',
             'node_modules/pace-progress/pace.js',
             'node_modules/wowjs/dist/wow.js',
             'node_modules/lozad/dist/lozad.js',
