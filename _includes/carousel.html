@@ -16,9 +16,11 @@
             </div>
             <!-- Set background for slide in css -->
             <div
-            class="lozad header-back"
-            data-background-image="{{ '/static/assets/img/' | prepend: site.baseurl }}{{ site.data.index.banners[0].src }}"
-            title="{{ site.data.index.banners[0].title }}">
+                class="lozad header-back"
+                data-background-image="{{ '/static/assets/img/' | prepend: site.baseurl }}{{ site.data.index.banners[0].src }}"
+                title="{{ site.data.index.banners[0].title }}"
+                style="height: 78px; width: 1920px;"
+            >
             </div>
         </div>
 
@@ -32,7 +34,9 @@
                 </div>
             </div>
             <!-- Set background for slide in css -->
-            <div class="lozad header-back" data-background-image="{{ "/static/assets/img/"  | prepend: site.baseurl }}{{ banner.src }}" title="{{ banner.title }}"></div>
+            <div class="lozad header-back"
+                data-background-image="{{ "/static/assets/img/"  | prepend: site.baseurl }}{{ banner.src }}"
+                title="{{ banner.title }}"></div>
         </div>
         {% endfor %}
 
