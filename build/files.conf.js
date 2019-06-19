@@ -13,8 +13,7 @@ module.exports = {
             'node_modules/wowjs/dist/wow.js',
             'node_modules/lozad/dist/lozad.js',
             'static/js/scroll.js',
-            'static/js/lazyload.js',
-            'static/js/skills.js'
+            'static/js/lazyload.js'
         ]
     }, {
         name: 'i18next page',

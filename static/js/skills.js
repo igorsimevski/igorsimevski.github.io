@@ -1,3 +1,6 @@
+---
+---
+
 $(document).ready(function() {
 
   var ctx = document.getElementById("{{ site.data.index.skills.id }}");
