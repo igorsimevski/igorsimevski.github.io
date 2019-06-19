@@ -30,7 +30,6 @@
     "metismenu": "^3.0.4",
     "pace-progress": "^1.0.2",
     "peity": "^3.3.0",
-    "purify-css": "^1.2.5",
     "wowjs": "^1.1.3"
   },
   "devDependencies": {
