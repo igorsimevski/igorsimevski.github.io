@@ -13,10 +13,10 @@ $(document).ready(function() {
       pointBorderColor: "#fff",
       pointHoverBackgroundColor: "#3385FF",
       pointHoverBorderColor: "#3385FF",
-      data: ["{{ site.data.index.skills.percentage }}"]
+      data: [{{ site.data.index.skills.percentage }}]
     }]
   };
-  var myRadarChart = new Chart(ctx, {
+  new Chart(ctx, {
     type: 'radar',
     data: data,
     options: {
