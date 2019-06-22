@@ -19,9 +19,9 @@ permalink: /
           {% for section in site.data.landing %}
           <li class="nav-item">
             {% if section.page %}
-              <a class="nav-link page-scroll" href="{{ section.page}} ">
+              <a class="nav-link active page-scroll" data-toggle="tab" href="{{ section.page}} ">
             {% else %}
-              <a class="nav-link page-scroll" href="{{ section.id | prepend: '#'}} ">
+              <a class="nav-link page-scroll" data-toggle="tab" href="{{ section.id | prepend: '#'}} ">
             {% endif %}
               <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
             </a>
