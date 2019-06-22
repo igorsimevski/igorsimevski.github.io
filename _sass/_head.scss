@@ -230,6 +230,13 @@ body.canvas-menu .nav-header {
   margin: 0;
 }
 
+.navbar-toggler {
+  background-color: $link-color;
+  color: $white;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
 .link-block, .ml-auto.navbar-top-links .link-block a {
   font-size: 12px;
 }
