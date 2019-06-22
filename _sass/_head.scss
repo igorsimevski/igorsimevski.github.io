@@ -405,7 +405,7 @@ body.canvas-menu .nav-header {
     background-color: transparent;
     border-color: transparent;
     transition: all .3s ease-in-out 0s;
-    .nav li a {
+    .nav-link {
       color: $white;
       font-family: 'Open Sans', helvetica, arial, sans-serif;
       font-weight: 700;
@@ -461,7 +461,7 @@ body.canvas-menu .nav-header {
       transition: all .3s ease-in-out 0s;
     }
   }
-  .navbar-scroll.navbar-light .nav li a {
+  .navbar-scroll.navbar-light .nav-link {
     color: $gray;
     &:hover {
       color: $link-color;
@@ -635,7 +635,7 @@ body.canvas-menu .nav-header {
         background: 0 0;
         color: inherit;
       }
-      .nav li a {
+      .nav-link {
         color: $gray;
         &:hover {
           color: $link-color;
