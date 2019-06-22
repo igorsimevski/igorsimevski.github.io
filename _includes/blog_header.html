@@ -24,7 +24,7 @@
                 <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">{{ site.title }}</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link page-scroll" href="{{ "blog/" | prepend: site.baseurl }}">{{ site.index.home }}</a></li>
                     {% for tag in site.data.blog %}
                         {% if tag.name != 'Donate' or site.donation %}
