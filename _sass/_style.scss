@@ -89,11 +89,11 @@ button.dim {
     border-color: $active-color1;
     color: $white;
   }
-  &.active[disabled] {
+  &.active, &:disabled {
     background-color: $active-color1;
     border-color: $active-color1;
   }
-  &[disabled] {
+  &:disabled {
     background-color: $active-color1;
     border-color: $active-color1;
     &:active, &:focus, &:hover {
@@ -132,11 +132,11 @@ button.dim {
     border-color: $active-color2;
     color: $white;
   }
-  &.active[disabled] {
+  &.active, &:disabled {
     background-color: $active-color3;
     border-color: $active-color3;
   }
-  &[disabled] {
+  &:disabled {
     background-color: $active-color3;
     border-color: $active-color3;
     &:active, &:focus, &:hover {
@@ -175,11 +175,11 @@ button.dim {
     border-color: #21b9bb;
     color: $white;
   }
-  &.active[disabled] {
+  &.active, &:disabled {
     background-color: #26d7d9;
     border-color: #26d7d9;
   }
-  &[disabled] {
+  &:disabled {
     background-color: #26d7d9;
     border-color: #26d7d9;
     &:active, &:focus, &:hover {
@@ -228,10 +228,10 @@ button.dim {
     color: inherit;
     border: 1px solid #d2d2d2;
   }
-  &.active[disabled] {
+  &.active, &:disabled {
     color: #cacaca;
   }
-  &[disabled] {
+  &:disabled {
     color: #cacaca;
     &:active, &:focus, &:hover {
       color: #cacaca;
@@ -268,11 +268,11 @@ button.dim {
     border-color: #f7a54a;
     color: $white;
   }
-  &.active[disabled] {
+  &.active, &:disabled {
     background-color: #f9b66d;
     border-color: #f9b66d;
   }
-  &[disabled] {
+  &:disabled {
     background-color: #f9b66d;
     border-color: #f9b66d;
     &:active, &:focus, &:hover {
@@ -288,10 +288,10 @@ button.dim {
     color: $link-color;
     text-decoration: none;
   }
-  &.active[disabled] {
+  &.active, &:disabled {
     color: #cacaca;
   }
-  &[disabled] {
+  &:disabled {
     color: #cacaca;
     &:active, &:focus, &:hover {
       color: #cacaca;
@@ -326,10 +326,10 @@ button.dim {
   &.active, &:active {
     background-image: none;
   }
-  &.active[disabled] {
+  &.active, &:disabled {
     color: #cacaca;
   }
-  &[disabled] {
+  &:disabled {
     color: #cacaca;
     &:active, &:focus, &:hover {
       color: #cacaca;
@@ -2082,11 +2082,11 @@ body {
     &.active, &:active {
       background-image: none;
     }
-    &.active[disabled] {
+    &.active, &:disabled {
       background-color: #1dc5a3;
       border-color: #1dc5a3;
     }
-    &[disabled] {
+    &:disabled {
       background-color: #1dc5a3;
       border-color: #1dc5a3;
       &:active, &:focus, &:hover {
