@@ -371,8 +371,6 @@ body.canvas-menu .nav-header {
     }
   }
   .navbar-wrapper .navbar.navbar-scroll {
-    padding-top: 0;
-    padding-bottom: 0;
     border-bottom: 1px solid $light-gray1;
     border-radius: 0;
   }
@@ -546,8 +544,7 @@ body.canvas-menu .nav-header {
       }
     }
     .navbar-wrapper .navbar {
-      padding-top: 0;
-      padding-bottom: 5px;
+      padding: 0;
       border-bottom: 1px solid $light-gray1;
       border-radius: 0;
     }
@@ -563,10 +560,6 @@ body.canvas-menu .nav-header {
       font-size: 12px;
       padding: 10px;
       height: auto;
-    }
-    .navbar-wrapper .navbar {
-      padding-left: 15px;
-      padding-right: 5px;
     }
     .navbar-light .navbar-nav > .active > a {
       color: inherit;
