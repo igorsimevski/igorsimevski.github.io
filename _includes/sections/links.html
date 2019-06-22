@@ -12,7 +12,7 @@
             <h1><span data-i18n="link.link">Link</span></h1>
         </div>
     </div>
-    <div class="row d-flex">
+    <div class="row">
     {% for link in site.data.index.links %}
         {% assign loopindex = forloop.index | modulo: 3 %}
         {% if forloop.last %}
@@ -27,7 +27,7 @@
         <div class="team-member">
             <h5><span class="navy">{{ link.last_name }}</span> {{ link.first_name }}</h5>
             <p>{{ link.desc }}</p>
-            <ul class="list-inline social-icon mx-auto justify-content-center">
+            <ul class="list-inline social-icon">
                 <li class="list-inline-item"><a href="{{ link.website }}" target="blank"><i class="fas fa-link"></i></a>
                 </li>
                 <li class="list-inline-item"><a href="mailto:{{ link.email }}"><i class="far fa-envelope"></i></a>
