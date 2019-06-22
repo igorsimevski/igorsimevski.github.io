@@ -388,6 +388,7 @@ body.canvas-menu .nav-header {
     border-radius: 5px;
     font-size: 12px;
     padding: 10px;
+    margin: 0.2rem;
   }
   .header-back {
     background-position: 50% 0;
@@ -509,9 +510,6 @@ body.canvas-menu .nav-header {
       h1 {
         font-size: 28px;
       }
-    }
-    .navbar.navbar-scroll .navbar-brand {
-      margin-top: 6px;
     }
     .navbar-light {
       background-color: $white;
