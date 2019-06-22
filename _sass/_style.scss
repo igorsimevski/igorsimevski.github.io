@@ -419,7 +419,7 @@ button {
   }
 }
 
-.label {
+.badge {
   background-color: #d1dade;
   color: #5e5e5e;
   font-family: 'Open Sans';
@@ -436,7 +436,7 @@ button.dim:active:before {
   outline: 0 !important;
 }
 
-.label {
+.badge {
   font-size: 10px;
   padding: 3px 8px;
 }
@@ -1045,7 +1045,7 @@ code {
     text-overflow: ellipsis;
     float: left;
   }
-  .label {
+  .badge {
     float: left;
     margin-left: 4px;
   }

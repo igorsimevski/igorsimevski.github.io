@@ -161,7 +161,7 @@ h3, h4, h5 {
   z-index: 2000;
 }
 
-.count-info .label {
+.count-info .badge {
   line-height: 12px;
   padding: 2px 5px;
   position: absolute;
@@ -176,7 +176,7 @@ h3, h4, h5 {
     background: $link-color !important;
     color: $white;
   }
-  span.label {
+  span.badge {
     background: $white;
     color: $link-color;
   }
