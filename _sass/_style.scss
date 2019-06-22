@@ -560,15 +560,15 @@ button.dim:active:before {
   border-color: #ed5565;
 }
 
-.has-success .control-label {
+.has-success .col-form-label {
   color: $link-color;
 }
 
-.has-warning .control-label {
+.has-warning .col-form-label {
   color: $warning-color;
 }
 
-.has-error .control-label {
+.has-error .col-form-label {
   color: #ed5565;
 }
 
