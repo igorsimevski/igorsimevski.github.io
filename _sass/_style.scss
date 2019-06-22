@@ -9,8 +9,6 @@ $light-gray2: #f3f3f4;
 $gray: #676a6c;
 $white: #fff;
 
-
-
 .menu-visible-lg, .menu-visible-md {
   display: none !important;
 }
@@ -35,6 +33,7 @@ $white: #fff;
 
 button.dim {
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -659,7 +658,7 @@ button.dim:active:before {
   -moz-box-sizing: border-box;
 }
 
-#wrapper, body {
+#wrapper {
   overflow-x: hidden;
 }
 
@@ -899,24 +898,9 @@ label.error {
   color: $link-color !important;
 }
 
-body {
-  font-size: 13px;
-}
-
-html {
-  height: 100%;
-}
-
 .clear {
   display: block;
   overflow: hidden;
-}
-
-a {
-  cursor: pointer;
-  &:focus, &:hover {
-    text-decoration: none;
-  }
 }
 
 .border-bottom {

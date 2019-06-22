@@ -9,9 +9,20 @@ $light-gray2: #f3f3f4;
 $gray: #676a6c;
 $white: #fff;
 
+html {
+  height: 100%;
+}
 
-button.dim {
-  text-transform: uppercase;
+body {
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+  &:focus, &:hover {
+    text-decoration: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
