@@ -509,11 +509,11 @@ body.canvas-menu .nav-header {
   .carousel-caption {
     z-index: 10;
   }
-  .carousel .item {
+  .carousel .carousel-item {
     height: 0;
     background-color: #777;
   }
-  .carousel-inner > .item > img {
+  .carousel-inner > .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
@@ -521,20 +521,20 @@ body.canvas-menu .nav-header {
   }
   .carousel-fade {
     .carousel-inner {
-      .item {
+      .carousel-item {
         opacity: 0;
         -webkit-transition-property: opacity;
         transition-property: opacity;
       }
       .active {
         opacity: 1;
-        &.left, &.right {
+        &.carousel-item-left, &.carousel-item-right {
           left: 0;
           opacity: 0;
           z-index: 1;
         }
       }
-      .next.left, .prev.right {
+      .carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right {
         opacity: 1;
       }
     }
@@ -543,7 +543,7 @@ body.canvas-menu .nav-header {
     }
   }
   .carousel-control {
-    &.left, &.right {
+    &.carousel-item-left, &.carousel-item-right {
       background: 0 0;
     }
     width: 6%;

@@ -6,7 +6,7 @@
     -->
     <div class="carousel-inner" role="listbox">
 
-        <div class="item active">
+        <div class="carousel-item active">
             <div class="container">
                 <div class="carousel-caption">
                 </div>
@@ -25,7 +25,7 @@
         </div>
 
         {% for banner in site.data.index.banners offset:1 %}
-        <div class="item">
+        <div class="carousel-item">
             <div class="container">
                 <div class="carousel-caption">
                 </div>
@@ -41,11 +41,11 @@
         {% endfor %}
 
     </div>
-    <!--<a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+    <!--<a class="carousel-item-left carousel-control" href="#inSlider" role="button" data-slide="carousel-item-prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+    <a class="carousel-item-right carousel-control" href="#inSlider" role="button" data-slide="carousel-item-next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
