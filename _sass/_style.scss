@@ -23,6 +23,9 @@ $white: #fff;
   .menu-visible-md {
     display: block !important;
   }
+  .navbar-expand-lg > .container {
+    align-items: normal !important;
+  }
 }
 
 @media (max-width: 767px) {
