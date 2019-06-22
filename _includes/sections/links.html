@@ -24,10 +24,10 @@
         {% else %}
         <div class="col-sm-4 wow {% if loopindex == 1 %} fadeInLeft {% else if loopindex == 2 %} zoomIn {% else %} fadeInRight {% endif %}">
         {% endif %}
-        <div class="team-member">
+        <div class="team-member d-flex">
             <h5><span class="navy">{{ link.last_name }}</span> {{ link.first_name }}</h5>
             <p>{{ link.desc }}</p>
-            <ul class="list-inline social-icon">
+            <ul class="list-inline social-icon mx-auto justify-content-center">
                 <li class="list-inline-item"><a href="{{ link.website }}" target="blank"><i class="fas fa-link"></i></a>
                 </li>
                 <li class="list-inline-item"><a href="mailto:{{ link.email }}"><i class="far fa-envelope"></i></a>

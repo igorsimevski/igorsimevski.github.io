@@ -2006,7 +2006,6 @@ body {
     background: #f4f4f4;
   }
   .team-member {
-    text-align: center;
     img {
       margin: auto;
     }
@@ -2091,6 +2090,7 @@ div#avatar {
 
 .list-inline-item {
   padding: 5px;
+  text-align: center;
 }
 
 // Fix Google Chrome audit "Ensure text remains visible during webfont load"

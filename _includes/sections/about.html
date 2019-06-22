@@ -19,12 +19,12 @@
         {% endfor %}
         <!-- avatar -->
         <div class="col-sm-4">
-            <div class="team-member wow zoomIn">
+            <div class="team-member wow zoomIn d-flex">
                 <div id="avatar" style="height: 160px;">
                     <img data-src="{{ site.author.avatar | prepend: site.baseurl }}" class="lozad img-fluid rounded-circle" alt="avatar">
                 </div>
                 <h5><span class="navy">{{ site.author.first_name }}</span> {{ site.author.last_name }}</h5>
-                <ul class="list-inline social-icon">
+                <ul class="list-inline social-icon mx-auto justify-content-center">
                     {% if site.author.github_username %}
                     <li class="list-inline-item"><a href="https://github.com/{{ site.author.github_username }}" target="blank" aria-label="Go to Github"><i class="fab fa-github"></i></a></li>
                     {% endif %}
