@@ -183,7 +183,6 @@ h3, h4, h5 {
 }
 
 .navbar-fixed-top {
-  transition-duration: .4s;
   border-bottom: 1px solid $light-gray1 !important;
   z-index: 2030;
   background: $light-gray2;
@@ -523,8 +522,6 @@ body.canvas-menu .nav-header {
     .carousel-inner {
       .carousel-item {
         opacity: 0;
-        -webkit-transition-property: opacity;
-        transition-property: opacity;
       }
       .active {
         opacity: 1;
@@ -590,7 +587,6 @@ body.canvas-menu .nav-header {
 @media (min-width: 768px) {
   .landing-page {
     .navbar-wrapper {
-      margin-top: 20px;
       .container {
         padding-right: 15px;
         padding-left: 15px;
