@@ -312,7 +312,9 @@ body.canvas-menu .nav-header {
       letter-spacing: 1px;
       text-transform: uppercase;
       font-size: 14px;
-      border: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      border-bottom: none !important;
       background: transparent;
     }
   }
