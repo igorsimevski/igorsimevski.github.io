@@ -168,6 +168,10 @@ h3, h4, h5 {
   margin-top: 0;
 }
 
+.nav-tabs {
+  border: none;
+}
+
 body {
   &.fixed-nav #wrapper #page-wrapper {
     margin-top: 60px;
