@@ -9,7 +9,7 @@
     <div class="row">
         <!-- first two icons -->
         {% for icon in site.author.skill_icon1 %}
-        <div class="col-xs-2 wow fadeInLeft">
+        <div class="col-sm-2 wow fadeInLeft">
             <div class="team-member">
                 <div class="vote-icon" style="text-align: center">
                     <i class="fab {{ icon.name }}"></i>
@@ -18,7 +18,7 @@
         </div>
         {% endfor %}
         <!-- avatar -->
-        <div class="col-xs-4">
+        <div class="col-sm-4">
             <div class="team-member wow zoomIn">
                 <div id="avatar" style="height: 160px;">
                     <img data-src="{{ site.author.avatar | prepend: site.baseurl }}" class="lozad img-fluid rounded-circle" alt="avatar">
@@ -49,7 +49,7 @@
         </div>
         <!-- second two icons -->
         {% for icon in site.author.skill_icon2 %}
-        <div class="col-xs-2 wow fadeInRight">
+        <div class="col-sm-2 wow fadeInRight">
             <div class="team-member">
                 <div class="vote-icon" style="text-align: center">
                     <i class="fab {{ icon.name }}"></i>
