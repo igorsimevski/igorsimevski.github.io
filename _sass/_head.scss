@@ -59,6 +59,9 @@ h3, h4, h5 {
 }
 
 .nav {
+  .navbar-right {
+    float: right !important;
+  }
   > li > a {
     color: #a7b1c2;
     font-weight: 600;
