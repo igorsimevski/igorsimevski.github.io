@@ -72,7 +72,7 @@ h3, h4, h5 {
   }
 }
 
-.navbar-default .nav > li > a {
+.navbar-light .nav > li > a {
   &:focus, &:hover {
     background-color: #293846;
     color: $white;
@@ -85,7 +85,7 @@ h3, h4, h5 {
   }
 }
 
-.navbar-default {
+.navbar-light {
   background-color: transparent;
 }
 
@@ -97,7 +97,7 @@ h3, h4, h5 {
   border: 0;
 }
 
-.navbar-default {
+.navbar-light {
   border-color: #2f4050;
 }
 
@@ -169,7 +169,7 @@ h3, h4, h5 {
   top: 12px;
 }
 
-.navbar-default .landing_link a {
+.navbar-light .landing_link a {
   background: $link-color;
   color: $white;
   &:hover {
@@ -397,7 +397,7 @@ body.canvas-menu .nav-header {
       padding-left: 15px;
     }
   }
-  .navbar-default {
+  .navbar-light {
     &.navbar-scroll {
       background-color: $white;
       border-color: $white;
@@ -419,7 +419,7 @@ body.canvas-menu .nav-header {
     padding-top: 25px;
     border-top: 6px solid transparent;
   }
-  .navbar-default {
+  .navbar-light {
     .navbar-nav > {
       .active > a {
         background: 0 0;
@@ -462,7 +462,7 @@ body.canvas-menu .nav-header {
       transition: all .3s ease-in-out 0s;
     }
   }
-  .navbar-scroll.navbar-default .nav li a {
+  .navbar-scroll.navbar-light .nav li a {
     color: $gray;
     &:hover {
       color: $link-color;
@@ -631,7 +631,7 @@ body.canvas-menu .nav-header {
     .navbar.navbar-scroll .navbar-brand {
       margin-top: 6px;
     }
-    .navbar-default {
+    .navbar-light {
       background-color: $white;
       border-color: $white;
       padding: 15px 0;
@@ -669,7 +669,7 @@ body.canvas-menu .nav-header {
       padding-left: 15px;
       padding-right: 5px;
     }
-    .navbar-default .navbar-nav > .active > a {
+    .navbar-light .navbar-nav > .active > a {
       color: inherit;
       &:hover {
         color: inherit;
