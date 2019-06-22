@@ -1,0 +1,102 @@
+@media (min-width: 768px) {
+  .landing-page {
+    .navbar-wrapper {
+      margin-top: 20px;
+      .container {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .navbar {
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 4px;
+      }
+    }
+    .carousel-caption p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .landing-page .carousel-image {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-page {
+    .carousel-caption {
+      left: 5%;
+      top: 80px;
+      &.blank {
+        left: 5%;
+        top: 80px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+    }
+    .navbar.navbar-scroll .navbar-brand {
+      margin-top: 6px;
+    }
+    .navbar-default {
+      background-color: $white;
+      border-color: $white;
+      padding: 15px 0;
+      .navbar-nav > .active > a:focus {
+        background: 0 0;
+        color: inherit;
+      }
+      .nav li a {
+        color: $gray;
+        &:hover {
+          color: $link-color;
+        }
+      }
+    }
+    .navbar-wrapper .navbar {
+      padding-top: 0;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $light-gray1;
+      border-radius: 0;
+    }
+    .nav > li > a {
+      padding: 25px 10px 15px;
+    }
+    .navbar-nav > li > a {
+      padding: 20px 10px;
+    }
+    .navbar .navbar-brand {
+      margin-top: 6px;
+      border-radius: 5px;
+      font-size: 12px;
+      padding: 10px;
+      height: auto;
+    }
+    .navbar-wrapper .navbar {
+      padding-left: 15px;
+      padding-right: 5px;
+    }
+    .navbar-default .navbar-nav > .active > a {
+      color: inherit;
+      &:hover {
+        color: inherit;
+      }
+    }
+    .carousel-control {
+      display: none;
+    }
+    .navbar .navbar-header {
+      display: block;
+      float: none;
+      .navbar-toggle {
+        background-color: $white;
+        padding: 9px 10px;
+        border: none;
+      }
+    }
+  }
+}
