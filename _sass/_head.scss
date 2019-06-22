@@ -526,7 +526,7 @@ body.canvas-menu .nav-header {
       background-color: $white;
       border-color: $white;
       padding: 15px 0;
-      .navbar-nav > .active > a:focus {
+      .navbar-nav > .active {
         background: 0 0;
         color: inherit;
       }
