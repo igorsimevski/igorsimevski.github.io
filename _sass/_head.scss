@@ -322,7 +322,7 @@ body.canvas-menu .nav-header {
   }
   .navbar-light {
     .navbar-nav > {
-      .active > a {
+      .active {
         background: 0 0;
         color: $white;
         border-top: 6px solid $link-color;
@@ -338,14 +338,18 @@ body.canvas-menu .nav-header {
           background: inherit;
         }
       }
-      .active > a:focus {
-        background: 0 0;
-        color: $white;
+      .active {
+        &:focus {
+          background: 0 0;
+          color: $white;
+        }
       }
     }
-    &.navbar-scroll .navbar-nav > .active > a:focus {
-      background: 0 0;
-      color: inherit;
+    &.navbar-scroll .navbar-nav > .active {
+      &:focus {
+        background: 0 0;
+        color: inherit;
+      }
     }
     .navbar-brand {
       &:focus, &:hover {
@@ -551,7 +555,7 @@ body.canvas-menu .nav-header {
       height: auto;
       margin: 0.2rem;
     }
-    .navbar-light .navbar-nav > .active > a {
+    .navbar-light .navbar-nav > .active {
       color: inherit;
       &:hover {
         color: inherit;
