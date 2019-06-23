@@ -304,7 +304,7 @@ body.canvas-menu .nav-header {
     background-color: transparent;
     border-color: transparent;
     transition: all .3s ease-in-out 0s;
-    .ml-auto .nav-link {
+    .navbar-nav .nav-link {
       color: $white;
       font-family: 'Open Sans', helvetica, arial, sans-serif;
       font-weight: 700;
@@ -315,11 +315,9 @@ body.canvas-menu .nav-header {
       border-right: none !important;
       border-bottom: none !important;
       background: transparent;
+      padding-top: 25px;
+      border-top: 6px solid transparent;
     }
-  }
-  .navbar-nav > li > a {
-    padding-top: 25px;
-    border-top: 6px solid transparent;
   }
   .navbar-light {
     .navbar-nav > {
