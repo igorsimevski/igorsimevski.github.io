@@ -150,13 +150,13 @@ body.canvas-menu .nav-header {
   border-radius: 0;
   border-color: $white;
   padding: 15px 0;
-  .navbar-link.active {
+  .nav-link.active {
     &:focus {
       background: 0 0;
       color: inherit;
     }
   }
-  .navbar-link {
+  .nav-link {
     padding: 20px 10px;
     color: $gray;
     &:hover {
