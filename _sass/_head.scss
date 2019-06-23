@@ -303,7 +303,7 @@ body.canvas-menu .nav-header {
       background-color: $white;
       border-color: $white;
       padding: 15px 0;
-      .navbar-nav > .active {
+      .navbar-nav .navbar-link.active {
         &:focus {
           background: 0 0;
           color: inherit;
