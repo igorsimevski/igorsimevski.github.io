@@ -194,17 +194,19 @@ body.canvas-menu .nav-header {
       border-radius: 0;
       border-color: $white;
       padding: 15px 0;
-      .nav-link.active {
-        &:focus {
-          background: 0 0;
-          color: inherit;
+      .navbar-nav {
+        .nav-link.active {
+          &:focus {
+            background: 0 0;
+            color: inherit;
+          }
         }
-      }
-      .nav-link {
-        padding: 20px 10px;
-        color: $gray;
-        &:hover {
-          color: $link-color;
+        .nav-link {
+          padding: 20px 10px;
+          color: $gray;
+          &:hover {
+            color: $link-color;
+          }
         }
       }
       .navbar-brand {
