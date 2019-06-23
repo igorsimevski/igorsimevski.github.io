@@ -303,11 +303,11 @@ body.canvas-menu .nav-header {
       background-color: $white;
       border-color: $white;
       padding: 15px 0;
-    }
-    &.navbar-scroll .navbar-nav > .active {
-      &:focus {
-        background: 0 0;
-        color: inherit;
+      .navbar-nav > .active {
+        &:focus {
+          background: 0 0;
+          color: inherit;
+        }
       }
     }
     .navbar-brand {
