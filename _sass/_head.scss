@@ -384,21 +384,11 @@ body.canvas-menu .nav-header {
       background-color: $white;
       border-color: $white;
       padding: 15px 0;
-      .navbar-nav > .active {
-        background: 0 0;
-        color: inherit;
-      }
     }
     .navbar-wrapper .navbar {
       padding: 0;
       border-bottom: 1px solid $light-gray1;
       border-radius: 0;
-    }
-    .navbar-light .navbar-nav > .active {
-      color: inherit;
-      &:hover {
-        color: inherit;
-      }
     }
     .carousel-control {
       display: none;
