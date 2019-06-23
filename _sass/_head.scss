@@ -301,6 +301,8 @@ body.canvas-menu .nav-header {
     transition: all .3s ease-in-out 0s;
     &.navbar-scroll {
       background-color: $white;
+      border-bottom: 1px solid $light-gray1;
+      border-radius: 0;
       border-color: $white;
       padding: 15px 0;
       .navbar-nav .navbar-link.active {
@@ -365,10 +367,6 @@ body.canvas-menu .nav-header {
         }
       }
     }
-  }
-  .navbar-wrapper .navbar.navbar-scroll {
-    border-bottom: 1px solid $light-gray1;
-    border-radius: 0;
   }
   .ml-auto > li {
     &.active {
