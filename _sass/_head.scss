@@ -252,17 +252,12 @@ body.canvas-menu .nav-header {
         }
       }
       .active {
-        background: 0 0;
-        //color: $white;
         border-top: 6px solid $link-color;
         background: inherit;
         &:hover {
-          background: 0 0;
-          color: $white;
           border-top: 6px solid $link-color;
         }
         &:focus {
-          background: 0 0;
           color: $white;
         }
       }
