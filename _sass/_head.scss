@@ -296,14 +296,35 @@ body.canvas-menu .nav-header {
     }
   }
   .navbar-light {
+    background-color: transparent;
+    border-color: transparent;
+    transition: all .3s ease-in-out 0s;
     &.navbar-scroll {
       background-color: $white;
       border-color: $white;
       padding: 15px 0;
     }
-    background-color: transparent;
-    border-color: transparent;
-    transition: all .3s ease-in-out 0s;
+    &.navbar-scroll .navbar-nav > .active {
+      &:focus {
+        background: 0 0;
+        color: inherit;
+      }
+    }
+    .navbar-brand {
+      &:focus, &:hover {
+        background: $link-color;
+        color: $white;
+      }
+      color: $white;
+      height: auto;
+      display: block;
+      font-size: 14px;
+      background: $link-color;
+      padding: 15px 20px;
+      border-radius: 0 0 5px 5px;
+      font-weight: 700;
+      transition: all .3s ease-in-out 0s;
+    }
     .navbar-nav {
       .nav-link {
         color: $white;
@@ -337,29 +358,6 @@ body.canvas-menu .nav-header {
           color: $white;
         }
       }
-    }
-  }
-  .navbar-light {
-    &.navbar-scroll .navbar-nav > .active {
-      &:focus {
-        background: 0 0;
-        color: inherit;
-      }
-    }
-    .navbar-brand {
-      &:focus, &:hover {
-        background: $link-color;
-        color: $white;
-      }
-      color: $white;
-      height: auto;
-      display: block;
-      font-size: 14px;
-      background: $link-color;
-      padding: 15px 20px;
-      border-radius: 0 0 5px 5px;
-      font-weight: 700;
-      transition: all .3s ease-in-out 0s;
     }
   }
   .navbar-scroll.navbar-light .ml-auto li a {
