@@ -405,7 +405,7 @@ body.canvas-menu .nav-header {
         background: 0 0;
         color: inherit;
       }
-      .ml-auto li a {
+      .ml-auto .nav-link {
         color: $gray;
         &:hover {
           color: $link-color;
