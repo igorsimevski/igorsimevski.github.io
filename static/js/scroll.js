@@ -1,8 +1,4 @@
 $(document).ready(function() {
-    $('body').scrollspy({
-        target: '.navbar-expand-lg',
-        offset: 80
-    });
 
     // Page scrolling feature
     $('a.page-scroll').bind('click', function(event) {
