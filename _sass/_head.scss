@@ -245,7 +245,7 @@ body.canvas-menu .nav-header {
         background: transparent;
         border-top: 6px solid transparent;
         padding: 24px 10px 15px;
-        &:focus, &:hover {
+        &:hover {
           color: $link-color;
           background: inherit;
         }
