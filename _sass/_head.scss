@@ -33,17 +33,6 @@ h3, h4, h5 {
   font-weight: 600;
 }
 
-.ml-auto {
-  > li > a {
-    color: #a7b1c2;
-    font-weight: 600;
-    padding: 14px 20px 14px 25px;
-  }
-  > li.active > a {
-    color: $white;
-  }
-}
-
 .navbar-light .ml-auto > li > a {
   &:focus, &:hover {
     background-color: #293846;
