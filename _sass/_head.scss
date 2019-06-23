@@ -243,9 +243,8 @@ body.canvas-menu .nav-header {
         border-right: none !important;
         border-bottom: none !important;
         background: transparent;
-        padding-top: 25px;
         border-top: 6px solid transparent;
-        padding: 25px 10px 15px;
+        padding: 24px 10px 15px;
         &:focus, &:hover {
           color: $link-color;
           background: inherit;
