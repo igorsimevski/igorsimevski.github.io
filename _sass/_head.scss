@@ -33,51 +33,6 @@ h3, h4, h5 {
   font-weight: 600;
 }
 
-.navbar-light .ml-auto > li > a {
-  &:focus, &:hover {
-    background-color: #293846;
-    color: $white;
-  }
-}
-
-.ml-auto.navbar-top-links > li > a {
-  &:focus, &:hover {
-    background-color: transparent;
-  }
-}
-
-.navbar-light {
-  background-color: transparent;
-}
-
-.ml-auto > li > a i {
-  margin-right: 6px;
-}
-
-.navbar {
-  border: 0;
-}
-
-.navbar-light {
-  border-color: #2f4050;
-}
-
-.navbar-top-links li {
-  display: inline-block;
-  &:last-child {
-    margin-right: 40px;
-  }
-}
-
-.body-small .navbar-top-links li:last-child {
-  margin-right: 0;
-}
-
-.navbar-top-links li a {
-  padding: 20px 10px;
-  min-height: 50px;
-}
-
 .dd-item > button, code {
   white-space: nowrap;
 }
