@@ -347,6 +347,7 @@ body.canvas-menu .nav-header {
         background: transparent;
         padding-top: 25px;
         border-top: 6px solid transparent;
+        padding: 25px 10px 15px;
         &:focus, &:hover {
           color: $link-color;
           background: inherit;
@@ -356,6 +357,8 @@ body.canvas-menu .nav-header {
         background: 0 0;
         //color: $white;
         border-top: 6px solid $link-color;
+        border: none;
+        background: inherit;
         &:hover {
           background: 0 0;
           color: $white;
@@ -366,15 +369,6 @@ body.canvas-menu .nav-header {
           color: $white;
         }
       }
-    }
-  }
-  .ml-auto > li {
-    &.active {
-      border: none;
-      background: inherit;
-    }
-    > a {
-      padding: 25px 10px 15px;
     }
   }
   .navbar-scroll .navbar-nav > li > a {
