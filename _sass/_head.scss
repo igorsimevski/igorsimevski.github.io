@@ -319,6 +319,12 @@ body.canvas-menu .nav-header {
           color: $link-color;
         }
       }
+      .navbar-brand {
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 10px;
+        margin: 0.2rem;
+      }
     }
     .navbar-brand {
       &:focus, &:hover {
@@ -372,12 +378,6 @@ body.canvas-menu .nav-header {
         }
       }
     }
-  }
-  .navbar.navbar-scroll .navbar-brand {
-    border-radius: 5px;
-    font-size: 12px;
-    padding: 10px;
-    margin: 0.2rem;
   }
   .header-back {
     background-position: 50% 0;
