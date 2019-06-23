@@ -207,6 +207,9 @@ body.canvas-menu .nav-header {
           &:hover {
             color: $link-color;
           }
+          &:focus {
+            color: inherit;
+          }
         }
       }
       .navbar-brand {
