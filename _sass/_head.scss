@@ -384,14 +384,16 @@ body.canvas-menu .nav-header {
       background-color: $white;
       border-color: $white;
       padding: 15px 0;
-      .navbar-nav > .active {
-        background: 0 0;
-        color: inherit;
-      }
-      .ml-auto .nav-link {
-        color: $gray;
-        &:hover {
-          color: $link-color;
+      .navbar-nav {
+        > .active {
+          background: 0 0;
+          color: inherit;
+        }
+        .nav-link {
+          color: $gray;
+          &:hover {
+            color: $link-color;
+          }
         }
       }
     }
