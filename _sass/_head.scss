@@ -304,23 +304,25 @@ body.canvas-menu .nav-header {
     background-color: transparent;
     border-color: transparent;
     transition: all .3s ease-in-out 0s;
-    .navbar-nav .nav-link {
-      color: $white;
-      font-family: 'Open Sans', helvetica, arial, sans-serif;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-size: 14px;
-      border-left: none !important;
-      border-right: none !important;
-      border-bottom: none !important;
-      background: transparent;
-      padding-top: 25px;
-      border-top: 6px solid transparent;
-    }
-  }
-  .navbar-light {
-    .navbar-nav > {
+    .navbar-nav {
+      .nav-link {
+        color: $white;
+        font-family: 'Open Sans', helvetica, arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 14px;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: none !important;
+        background: transparent;
+        padding-top: 25px;
+        border-top: 6px solid transparent;
+        &:focus, &:hover {
+          color: $link-color;
+          background: inherit;
+        }
+      }
       .active {
         background: 0 0;
         color: $white;
@@ -330,20 +332,14 @@ body.canvas-menu .nav-header {
           color: $white;
           border-top: 6px solid $link-color;
         }
-      }
-      li > a {
-        &:focus, &:hover {
-          color: $link-color;
-          background: inherit;
-        }
-      }
-      .active {
         &:focus {
           background: 0 0;
           color: $white;
         }
       }
     }
+  }
+  .navbar-light {
     &.navbar-scroll .navbar-nav > .active {
       &:focus {
         background: 0 0;
