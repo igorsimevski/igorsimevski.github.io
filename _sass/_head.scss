@@ -296,12 +296,13 @@ body.canvas-menu .nav-header {
     }
   }
   .navbar-light {
+    border: none !important;
     background-color: transparent;
     border-color: transparent;
     transition: all .3s ease-in-out 0s;
     &.navbar-scroll {
       background-color: $white;
-      border-bottom: 1px solid $light-gray1;
+      border-bottom: 1px solid $light-gray1 !important;
       border-radius: 0;
       border-color: $white;
       padding: 15px 0;
@@ -370,12 +371,6 @@ body.canvas-menu .nav-header {
           color: $white;
         }
       }
-    }
-  }
-  .navbar-expand-lg {
-    border: none !important;
-    &.navbar-scroll {
-      border-bottom: 1px solid $light-gray1 !important;
     }
   }
   .navbar.navbar-scroll .navbar-brand {
