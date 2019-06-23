@@ -249,6 +249,9 @@ body.canvas-menu .nav-header {
           color: $link-color;
           background: inherit;
         }
+        &:focus {
+          color: $white;
+        }
       }
       .active {
         border-top: 6px solid $link-color;
