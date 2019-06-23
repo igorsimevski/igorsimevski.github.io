@@ -58,10 +58,6 @@ h3, h4, h5 {
   }
 }
 
-.navbar-static-top {
-  background: $light-gray2;
-}
-
 .fixed-nav #wrapper {
   margin-top: 0;
 }
@@ -93,7 +89,7 @@ body.canvas-menu .nav-header {
 }
 
 .white-bg {
-  .navbar-expand-lg, .navbar-static-top {
+  .navbar-expand-lg {
     background: $white;
   }
 }
@@ -136,39 +132,12 @@ body.canvas-menu .nav-header {
   font-size: 12px;
 }
 
-.contact-box, .light-navbar .navbar.navbar-static-top {
+.contact-box, .light-navbar {
   background-color: $white;
 }
 
 .form-control:focus, .form-control:focus, .form-control:focus, .navbar-collapse, .form-inline {
   box-shadow: none;
-}
-
-.navbar-scroll {
-  background-color: $white;
-  border-bottom: 1px solid $light-gray1 !important;
-  border-radius: 0;
-  border-color: $white;
-  padding: 15px 0;
-  .nav-link.active {
-    &:focus {
-      background: 0 0;
-      color: inherit;
-    }
-  }
-  .nav-link {
-    padding: 20px 10px;
-    color: $gray;
-    &:hover {
-      color: $link-color;
-    }
-  }
-  .navbar-brand {
-    border-radius: 5px;
-    font-size: 12px;
-    padding: 10px;
-    margin: 0.2rem;
-  }
 }
 
 .landing-page {
@@ -219,6 +188,32 @@ body.canvas-menu .nav-header {
     background-color: transparent;
     border-color: transparent;
     transition: all .3s ease-in-out 0s;
+    &.navbar-scroll {
+      background-color: $white;
+      border-bottom: 1px solid $light-gray1 !important;
+      border-radius: 0;
+      border-color: $white;
+      padding: 15px 0;
+      .nav-link.active {
+        &:focus {
+          background: 0 0;
+          color: inherit;
+        }
+      }
+      .nav-link {
+        padding: 20px 10px;
+        color: $gray;
+        &:hover {
+          color: $link-color;
+        }
+      }
+      .navbar-brand {
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 10px;
+        margin: 0.2rem;
+      }
+    }
     .navbar-brand {
       &:focus, &:hover {
         background: $link-color;
