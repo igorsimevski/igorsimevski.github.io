@@ -144,6 +144,33 @@ body.canvas-menu .nav-header {
   box-shadow: none;
 }
 
+.navbar-scroll {
+  background-color: $white;
+  border-bottom: 1px solid $light-gray1 !important;
+  border-radius: 0;
+  border-color: $white;
+  padding: 15px 0;
+  .navbar-link.active {
+    &:focus {
+      background: 0 0;
+      color: inherit;
+    }
+  }
+  .navbar-link {
+    padding: 20px 10px;
+    color: $gray;
+    &:hover {
+      color: $link-color;
+    }
+  }
+  .navbar-brand {
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px;
+    margin: 0.2rem;
+  }
+}
+
 .landing-page {
   span.navy {
     color: $link-color;
@@ -185,32 +212,6 @@ body.canvas-menu .nav-header {
     }
     .navbar {
       padding: 0;
-    }
-  }
-  .navbar-light.navbar-scroll {
-    background-color: $white;
-    border-bottom: 1px solid $light-gray1 !important;
-    border-radius: 0;
-    border-color: $white;
-    padding: 15px 0;
-    .navbar-link.active {
-      &:focus {
-        background: 0 0;
-        color: inherit;
-      }
-    }
-    .navbar-link {
-      padding: 20px 10px;
-      color: $gray;
-      &:hover {
-        color: $link-color;
-      }
-    }
-    .navbar-brand {
-      border-radius: 5px;
-      font-size: 12px;
-      padding: 10px;
-      margin: 0.2rem;
     }
   }
   .navbar-light {
