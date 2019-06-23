@@ -309,6 +309,12 @@ body.canvas-menu .nav-header {
           color: inherit;
         }
       }
+      .navbar-nav .navbar-link {
+        color: $gray;
+        &:hover {
+          color: $link-color;
+        }
+      }
     }
     .navbar-brand {
       &:focus, &:hover {
@@ -358,12 +364,6 @@ body.canvas-menu .nav-header {
           color: $white;
         }
       }
-    }
-  }
-  .navbar-scroll.navbar-light .ml-auto li a {
-    color: $gray;
-    &:hover {
-      color: $link-color;
     }
   }
   .navbar-wrapper .navbar.navbar-scroll {
