@@ -1,208 +1,774 @@
-!function(a, b) {
-    "use strict";
-    "undefined" != typeof module && module.exports ? module.exports = b(require("jquery")) :"function" == typeof define && define.amd ? define([ "jquery" ], function(a) {
-        return b(a);
-    }) :b(a.jQuery);
-}(this, function(a) {
-    "use strict";
-    var b = function(b, c) {
-        this.$element = a(b), this.options = a.extend({}, a.fn.typeahead.defaults, c), this.matcher = this.options.matcher || this.matcher,
-        this.sorter = this.options.sorter || this.sorter, this.select = this.options.select || this.select,
-        this.autoSelect = "boolean" == typeof this.options.autoSelect ? this.options.autoSelect :!0,
-        this.highlighter = this.options.highlighter || this.highlighter, this.render = this.options.render || this.render,
-        this.updater = this.options.updater || this.updater, this.displayText = this.options.displayText || this.displayText,
-        this.source = this.options.source, this.delay = this.options.delay, this.$menu = a(this.options.menu),
-        this.$appendTo = this.options.appendTo ? a(this.options.appendTo) :null, this.shown = !1,
-        this.listen(), this.showHintOnFocus = "boolean" == typeof this.options.showHintOnFocus ? this.options.showHintOnFocus :!1,
-        this.afterSelect = this.options.afterSelect, this.addItem = !1;
+/* =============================================================
+ * bootstrap3-typeahead.js v4.0.2
+ * https://github.com/bassjobsen/Bootstrap-3-Typeahead
+ * =============================================================
+ * Original written by @mdo and @fat
+ * =============================================================
+ * Copyright 2014 Bass Jobsen @bassjobsen
+ *
+ * Licensed under the Apache License, Version 2.0 (the 'License');
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an 'AS IS' BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ============================================================ */
+
+
+(function (root, factory) {
+
+    'use strict';
+
+    // CommonJS module is defined
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = factory(require('jquery'));
+    }
+    // AMD module is defined
+    else if (typeof define === 'function' && define.amd) {
+        define(['jquery'], function ($) {
+            return factory($);
+        });
+    } else {
+        factory(root.jQuery);
+    }
+
+}(this, function ($) {
+
+    'use strict';
+    // jshint laxcomma: true
+
+
+    /* TYPEAHEAD PUBLIC CLASS DEFINITION
+     * ================================= */
+
+    var Typeahead = function (element, options) {
+        this.$element = $(element);
+        this.options = $.extend({}, Typeahead.defaults, options);
+        this.matcher = this.options.matcher || this.matcher;
+        this.sorter = this.options.sorter || this.sorter;
+        this.select = this.options.select || this.select;
+        this.autoSelect = typeof this.options.autoSelect == 'boolean' ? this.options.autoSelect : true;
+        this.highlighter = this.options.highlighter || this.highlighter;
+        this.render = this.options.render || this.render;
+        this.updater = this.options.updater || this.updater;
+        this.displayText = this.options.displayText || this.displayText;
+        this.itemLink = this.options.itemLink || this.itemLink;
+        this.itemTitle = this.options.itemTitle || this.itemTitle;
+        this.followLinkOnSelect = this.options.followLinkOnSelect || this.followLinkOnSelect;
+        this.source = this.options.source;
+        this.delay = this.options.delay;
+        this.theme = this.options.theme && this.options.themes && this.options.themes[this.options.theme] || Typeahead.defaults.themes[Typeahead.defaults.theme];
+        this.$menu = $(this.options.menu || this.theme.menu);
+        this.$appendTo = this.options.appendTo ? $(this.options.appendTo) : null;
+        this.fitToElement = typeof this.options.fitToElement == 'boolean' ? this.options.fitToElement : false;
+        this.shown = false;
+        this.listen();
+        this.showHintOnFocus = typeof this.options.showHintOnFocus == 'boolean' || this.options.showHintOnFocus === 'all' ? this.options.showHintOnFocus : false;
+        this.afterSelect = this.options.afterSelect;
+        this.afterEmptySelect = this.options.afterEmptySelect;
+        this.addItem = false;
+        this.value = this.$element.val() || this.$element.text();
+        this.keyPressed = false;
+        this.focused = this.$element.is(':focus');
+        this.changeInputOnSelect = this.options.changeInputOnSelect || this.changeInputOnSelect;
+        this.changeInputOnMove = this.options.changeInputOnMove || this.changeInputOnMove;
+        this.openLinkInNewTab = this.options.openLinkInNewTab || this.openLinkInNewTab;
+        this.selectOnBlur = this.options.selectOnBlur || this.selectOnBlur;
+        this.showCategoryHeader = this.options.showCategoryHeader || this.showCategoryHeader;
     };
-    b.prototype = {
-        constructor:b,
-        select:function() {
-            var a = this.$menu.find(".active").data("value");
-            if (this.$element.data("active", a), this.autoSelect || a) {
-                var b = this.updater(a);
-                this.$element.val(this.displayText(b) || b).change(), this.afterSelect(b);
+
+    Typeahead.prototype = {
+
+        constructor: Typeahead,
+
+
+        setDefault: function (val) {
+            // var val = this.$menu.find('.active').data('value');
+            this.$element.data('active', val);
+            if (this.autoSelect || val) {
+                var newVal = this.updater(val);
+                // Updater can be set to any random functions via "options" parameter in constructor above.
+                // Add null check for cases when updater returns void or undefined.
+                if (!newVal) {
+                    newVal = '';
+                }
+                this.$element
+                    .val(this.displayText(newVal) || newVal)
+                    .text(this.displayText(newVal) || newVal)
+                    .change();
+                this.afterSelect(newVal);
             }
             return this.hide();
         },
-        updater:function(a) {
-            return a;
-        },
-        setSource:function(a) {
-            this.source = a;
-        },
-        show:function() {
-            var b, c = a.extend({}, this.$element.position(), {
-                height:this.$element[0].offsetHeight
-            });
-            return b = "function" == typeof this.options.scrollHeight ? this.options.scrollHeight.call() :this.options.scrollHeight,
-            (this.$appendTo ? this.$menu.appendTo(this.$appendTo) :this.$menu.insertAfter(this.$element)).css({
-                top:c.top + c.height + b,
-                left:c.left
-            }).show(), this.shown = !0, this;
-        },
-        hide:function() {
-            return this.$menu.hide(), this.shown = !1, this;
-        },
-        lookup:function(b) {
-            if (this.query = "undefined" != typeof b && null !== b ? b :this.$element.val() || "",
-            this.query.length < this.options.minLength) return this.shown ? this.hide() :this;
-            var c = a.proxy(function() {
-                a.isFunction(this.source) ? this.source(this.query, a.proxy(this.process, this)) :this.source && this.process(this.source);
-            }, this);
-            clearTimeout(this.lookupWorker), this.lookupWorker = setTimeout(c, this.delay);
-        },
-        process:function(b) {
-            var c = this;
-            return b = a.grep(b, function(a) {
-                return c.matcher(a);
-            }), b = this.sorter(b), b.length || this.options.addItem ? (b.length > 0 ? this.$element.data("active", b[0]) :this.$element.data("active", null),
-            this.options.addItem && b.push(this.options.addItem), "all" == this.options.items ? this.render(b).show() :this.render(b.slice(0, this.options.items)).show()) :this.shown ? this.hide() :this;
-        },
-        matcher:function(a) {
-            var b = this.displayText(a);
-            return ~b.toLowerCase().indexOf(this.query.toLowerCase());
-        },
-        sorter:function(a) {
-            for (var b, c = [], d = [], e = []; b = a.shift(); ) {
-                var f = this.displayText(b);
-                f.toLowerCase().indexOf(this.query.toLowerCase()) ? ~f.indexOf(this.query) ? d.push(b) :e.push(b) :c.push(b);
-            }
-            return c.concat(d, e);
-        },
-        highlighter:function(b) {
-            var c, d, e, f, g, h = a("<div></div>"), i = this.query, j = b.toLowerCase().indexOf(i.toLowerCase());
-            if (c = i.length, 0 === c) return h.text(b).html();
-            for (;j > -1; ) d = b.substr(0, j), e = b.substr(j, c), f = b.substr(j + c), g = a("<strong></strong>").text(e),
-            h.append(document.createTextNode(d)).append(g), b = f, j = b.toLowerCase().indexOf(i.toLowerCase());
-            return h.append(document.createTextNode(b)).html();
-        },
-        render:function(b) {
-            var c = this, d = this, e = !1;
-            return b = a(b).map(function(b, f) {
-                var g = d.displayText(f);
-                return b = a(c.options.item).data("value", f), b.find("a").html(c.highlighter(g)),
-                g == d.$element.val() && (b.addClass("active"), d.$element.data("active", f), e = !0),
-                b[0];
-            }), this.autoSelect && !e && (b.first().addClass("active"), this.$element.data("active", b.first().data("value"))),
-            this.$menu.html(b), this;
-        },
-        displayText:function(a) {
-            return a.name || a;
-        },
-        next:function() {
-            var b = this.$menu.find(".active").removeClass("active"), c = b.next();
-            c.length || (c = a(this.$menu.find("li")[0])), c.addClass("active");
-        },
-        prev:function() {
-            var a = this.$menu.find(".active").removeClass("active"), b = a.prev();
-            b.length || (b = this.$menu.find("li").last()), b.addClass("active");
-        },
-        listen:function() {
-            this.$element.on("focus", a.proxy(this.focus, this)).on("blur", a.proxy(this.blur, this)).on("keypress", a.proxy(this.keypress, this)).on("keyup", a.proxy(this.keyup, this)),
-            this.eventSupported("keydown") && this.$element.on("keydown", a.proxy(this.keydown, this)),
-            this.$menu.on("click", a.proxy(this.click, this)).on("mouseenter", "li", a.proxy(this.mouseenter, this)).on("mouseleave", "li", a.proxy(this.mouseleave, this));
-        },
-        destroy:function() {
-            this.$element.data("typeahead", null), this.$element.data("active", null), this.$element.off("focus").off("blur").off("keypress").off("keyup"),
-            this.eventSupported("keydown") && this.$element.off("keydown"), this.$menu.remove();
-        },
-        eventSupported:function(a) {
-            var b = a in this.$element;
-            return b || (this.$element.setAttribute(a, "return;"), b = "function" == typeof this.$element[a]),
-            b;
-        },
-        move:function(a) {
-            if (this.shown) {
-                switch (a.keyCode) {
-                  case 9:
-                  case 13:
-                  case 27:
-                    a.preventDefault();
-                    break;
 
-                  case 38:
-                    if (a.shiftKey) return;
-                    a.preventDefault(), this.prev();
-                    break;
+        select: function () {
+            var val = this.$menu.find('.active').data('value');
 
-                  case 40:
-                    if (a.shiftKey) return;
-                    a.preventDefault(), this.next();
+            this.$element.data('active', val);
+            if (this.autoSelect || val) {
+                var newVal = this.updater(val);
+                // Updater can be set to any random functions via "options" parameter in constructor above.
+                // Add null check for cases when updater returns void or undefined.
+                if (!newVal) {
+                    newVal = '';
                 }
-                a.stopPropagation();
+
+                if (this.changeInputOnSelect) {
+                    this.$element
+                        .val(this.displayText(newVal) || newVal)
+                        .text(this.displayText(newVal) || newVal)
+                        .change();
+                }
+
+                if (this.followLinkOnSelect && this.itemLink(val)) {
+                    if (this.openLinkInNewTab) {
+                        window.open(this.itemLink(val), '_blank');
+                    } else {
+                        document.location = this.itemLink(val);
+                    }
+                    this.afterSelect(newVal);
+                } else if (this.followLinkOnSelect && !this.itemLink(val)) {
+                    this.afterEmptySelect(newVal);
+                } else {
+                    this.afterSelect(newVal);
+                }
+            } else {
+                this.afterEmptySelect();
+            }
+
+            return this.hide();
+        },
+
+        updater: function (item) {
+            return item;
+        },
+
+        setSource: function (source) {
+            this.source = source;
+        },
+
+        show: function () {
+            var pos = $.extend({}, this.$element.position(), {
+                height: this.$element[0].offsetHeight
+            });
+
+            var scrollHeight = typeof this.options.scrollHeight == 'function' ?
+                this.options.scrollHeight.call() :
+                this.options.scrollHeight;
+
+            var element;
+            if (this.shown) {
+                element = this.$menu;
+            } else if (this.$appendTo) {
+                element = this.$menu.appendTo(this.$appendTo);
+                this.hasSameParent = this.$appendTo.is(this.$element.parent());
+            } else {
+                element = this.$menu.insertAfter(this.$element);
+                this.hasSameParent = true;
+            }
+
+            if (!this.hasSameParent) {
+                // We cannot rely on the element position, need to position relative to the window
+                element.css('position', 'fixed');
+                var offset = this.$element.offset();
+                pos.top = offset.top;
+                pos.left = offset.left;
+            }
+            // The rules for bootstrap are: 'dropup' in the parent and 'dropdown-menu-right' in the element.
+            // Note that to get right alignment, you'll need to specify `menu` in the options to be:
+            // '<ul class="typeahead dropdown-menu" role="listbox"></ul>'
+            var dropup = $(element).parent().hasClass('dropup');
+            var newTop = dropup ? 'auto' : (pos.top + pos.height + scrollHeight);
+            var right = $(element).hasClass('dropdown-menu-right');
+            var newLeft = right ? 'auto' : pos.left;
+            // it seems like setting the css is a bad idea (just let Bootstrap do it), but I'll keep the old
+            // logic in place except for the dropup/right-align cases.
+            element.css({ top: newTop, left: newLeft }).show();
+
+            if (this.options.fitToElement === true) {
+                element.css('width', this.$element.outerWidth() + 'px');
+            }
+
+            this.shown = true;
+            return this;
+        },
+
+        hide: function () {
+            this.$menu.hide();
+            this.shown = false;
+            return this;
+        },
+
+        lookup: function (query) {
+            if (typeof(query) != 'undefined' && query !== null) {
+                this.query = query;
+            } else {
+                this.query = this.$element.val();
+            }
+
+            if (this.query.length < this.options.minLength && !this.options.showHintOnFocus) {
+                return this.shown ? this.hide() : this;
+            }
+
+            var worker = $.proxy(function () {
+
+                // Bloodhound (since 0.11) needs three arguments.
+                // Two of them are callback functions (sync and async) for local and remote data processing
+                // see https://github.com/twitter/typeahead.js/blob/master/src/bloodhound/bloodhound.js#L132
+                if ($.isFunction(this.source) && this.source.length === 3) {
+                    this.source(this.query, $.proxy(this.process, this), $.proxy(this.process, this));
+                } else if ($.isFunction(this.source)) {
+                    this.source(this.query, $.proxy(this.process, this));
+                } else if (this.source) {
+                    this.process(this.source);
+                }
+            }, this);
+
+            clearTimeout(this.lookupWorker);
+            this.lookupWorker = setTimeout(worker, this.delay);
+        },
+
+        process: function (items) {
+            var that = this;
+
+            items = $.grep(items, function (item) {
+                return that.matcher(item);
+            });
+
+            items = this.sorter(items);
+
+            if (!items.length && !this.options.addItem) {
+                return this.shown ? this.hide() : this;
+            }
+
+            if (items.length > 0) {
+                this.$element.data('active', items[0]);
+            } else {
+                this.$element.data('active', null);
+            }
+
+            if (this.options.items != 'all') {
+                items = items.slice(0, this.options.items);
+            }
+
+            // Add item
+            if (this.options.addItem) {
+                items.push(this.options.addItem);
+            }
+
+            return this.render(items).show();
+        },
+
+        matcher: function (item) {
+            var it = this.displayText(item);
+            return ~it.toLowerCase().indexOf(this.query.toLowerCase());
+        },
+
+        sorter: function (items) {
+            var beginswith = [];
+            var caseSensitive = [];
+            var caseInsensitive = [];
+            var item;
+
+            while ((item = items.shift())) {
+                var it = this.displayText(item);
+                if (!it.toLowerCase().indexOf(this.query.toLowerCase())) {
+                    beginswith.push(item);
+                } else if (~it.indexOf(this.query)) {
+                    caseSensitive.push(item);
+                } else {
+                    caseInsensitive.push(item);
+                }
+            }
+
+            return beginswith.concat(caseSensitive, caseInsensitive);
+        },
+
+        highlighter: function (item) {
+            var text = this.query;
+            if (text === '') {
+                return item;
+            }
+            var matches = item.match(/(>)([^<]*)(<)/g);
+            var first = [];
+            var second = [];
+            var i;
+            if (matches && matches.length) {
+                // html
+                for (i = 0; i < matches.length; ++i) {
+                    if (matches[i].length > 2) {// escape '><'
+                        first.push(matches[i]);
+                    }
+                }
+            } else {
+                // text
+                first = [];
+                first.push(item);
+            }
+            text = text.replace((/[\(\)\/\.\*\+\?\[\]]/g), function (mat) {
+                return '\\' + mat;
+            });
+            var reg = new RegExp(text, 'g');
+            var m;
+            for (i = 0; i < first.length; ++i) {
+                m = first[i].match(reg);
+                if (m && m.length > 0) {// find all text nodes matches
+                    second.push(first[i]);
+                }
+            }
+            for (i = 0; i < second.length; ++i) {
+                item = item.replace(second[i], second[i].replace(reg, '<strong>$&</strong>'));
+            }
+            return item;
+        },
+
+        render: function (items) {
+            var that = this;
+            var self = this;
+            var activeFound = false;
+            var data = [];
+            var _category = that.options.separator;
+
+            $.each(items, function (key, value) {
+                // inject separator
+                if (key > 0 && value[_category] !== items[key - 1][_category]) {
+                    data.push({
+                        __type: 'divider'
+                    });
+                }
+
+                if (this.showCategoryHeader) {
+                    // inject category header
+                    if (value[_category] && (key === 0 || value[_category] !== items[key - 1][_category])) {
+                        data.push({
+                            __type: 'category',
+                            name: value[_category]
+                        });
+                    }
+                }
+
+                data.push(value);
+            });
+
+            items = $(data).map(function (i, item) {
+                    if ((item.__type || false) == 'category'){
+                        return $(that.options.headerHtml || that.theme.headerHtml).text(item.name)[0];
+                    }
+
+                    if ((item.__type || false) == 'divider'){
+                        return $(that.options.headerDivider || that.theme.headerDivider)[0];
+                    }
+
+                    var text = self.displayText(item);
+                    i = $(that.options.item || that.theme.item).data('value', item);
+                    i.find(that.options.itemContentSelector || that.theme.itemContentSelector)
+                        .addBack(that.options.itemContentSelector || that.theme.itemContentSelector)
+                        .html(that.highlighter(text, item));
+                    if(that.options.followLinkOnSelect) {
+                        i.find('a').attr('href', self.itemLink(item));
+                    }
+                    i.find('a').attr('title', self.itemTitle(item));
+                    if (text == self.$element.val()) {
+                        i.addClass('active');
+                        self.$element.data('active', item);
+                        activeFound = true;
+                    }
+                    return i[0];
+                });
+
+            if (this.autoSelect && !activeFound) {
+                items.filter(':not(.dropdown-header)').first().addClass('active');
+                this.$element.data('active', items.first().data('value'));
+            }
+            this.$menu.html(items);
+            return this;
+        },
+
+        displayText: function (item) {
+            return typeof item !== 'undefined' && typeof item.name != 'undefined' ? item.name : item;
+        },
+
+        itemLink: function (item) {
+            return null;
+        },
+
+        itemTitle: function (item) {
+            return null;
+        },
+
+        next: function (event) {
+            var active = this.$menu.find('.active').removeClass('active');
+            var next = active.next();
+
+            if (!next.length) {
+                next = $(this.$menu.find($(this.options.item || this.theme.item).prop('tagName'))[0]);
+            }
+
+            while (next.hasClass('divider') || next.hasClass('dropdown-header')) {
+                next = next.next();
+            }
+
+            next.addClass('active');
+            // added for screen reader
+            var newVal = this.updater(next.data('value'));
+            if (this.changeInputOnMove) {
+                this.$element.val(this.displayText(newVal) || newVal);
             }
         },
-        keydown:function(b) {
-            this.suppressKeyPressRepeat = ~a.inArray(b.keyCode, [ 40, 38, 9, 13, 27 ]), this.shown || 40 != b.keyCode ? this.move(b) :this.lookup();
+
+        prev: function (event) {
+            var active = this.$menu.find('.active').removeClass('active');
+            var prev = active.prev();
+
+            if (!prev.length) {
+                prev = this.$menu.find($(this.options.item || this.theme.item).prop('tagName')).last();
+            }
+
+            while (prev.hasClass('divider') || prev.hasClass('dropdown-header')) {
+                prev = prev.prev();
+            }
+
+            prev.addClass('active');
+            // added for screen reader
+            var newVal = this.updater(prev.data('value'));
+            if (this.changeInputOnMove) {
+                this.$element.val(this.displayText(newVal) || newVal);
+            }
         },
-        keypress:function(a) {
-            this.suppressKeyPressRepeat || this.move(a);
+
+        listen: function () {
+            this.$element
+                .on('focus.bootstrap3Typeahead', $.proxy(this.focus, this))
+                .on('blur.bootstrap3Typeahead', $.proxy(this.blur, this))
+                .on('keypress.bootstrap3Typeahead', $.proxy(this.keypress, this))
+                .on('propertychange.bootstrap3Typeahead input.bootstrap3Typeahead', $.proxy(this.input, this))
+                .on('keyup.bootstrap3Typeahead', $.proxy(this.keyup, this));
+
+            if (this.eventSupported('keydown')) {
+                this.$element.on('keydown.bootstrap3Typeahead', $.proxy(this.keydown, this));
+            }
+
+            var itemTagName = $(this.options.item || this.theme.item).prop('tagName');
+            if ('ontouchstart' in document.documentElement && 'onmousemove' in document.documentElement) {
+		        this.$menu
+		            .on('touchstart', itemTagName, $.proxy(this.touchstart, this))
+		            .on('touchend', itemTagName, $.proxy(this.click, this))
+		            .on('click', $.proxy(this.click, this))
+		            .on('mouseenter', itemTagName, $.proxy(this.mouseenter, this))
+		            .on('mouseleave', itemTagName, $.proxy(this.mouseleave, this))
+		            .on('mousedown', $.proxy(this.mousedown,this));
+	        } else if ('ontouchstart' in document.documentElement) {
+		        this.$menu
+		            .on('touchstart', itemTagName, $.proxy(this.touchstart, this))
+		            .on('touchend', itemTagName, $.proxy(this.click, this));
+	        } else {
+                this.$menu
+                    .on('click', $.proxy(this.click, this))
+                    .on('mouseenter', itemTagName, $.proxy(this.mouseenter, this))
+                    .on('mouseleave', itemTagName, $.proxy(this.mouseleave, this))
+                    .on('mousedown', $.proxy(this.mousedown, this));
+            }
         },
-        keyup:function(a) {
-            switch (a.keyCode) {
-              case 40:
-              case 38:
-              case 16:
-              case 17:
-              case 18:
-                break;
 
-              case 9:
-              case 13:
-                if (!this.shown) return;
-                this.select();
-                break;
+        destroy: function () {
+            this.$element.data('typeahead', null);
+            this.$element.data('active', null);
+            this.$element
+                .unbind('focus.bootstrap3Typeahead')
+                .unbind('blur.bootstrap3Typeahead')
+                .unbind('keypress.bootstrap3Typeahead')
+                .unbind('propertychange.bootstrap3Typeahead input.bootstrap3Typeahead')
+                .unbind('keyup.bootstrap3Typeahead');
 
-              case 27:
-                if (!this.shown) return;
-                this.hide();
-                break;
+            if (this.eventSupported('keydown')) {
+                this.$element.unbind('keydown.bootstrap3-typeahead');
+            }
 
-              default:
+            this.$menu.remove();
+            this.destroyed = true;
+        },
+
+        eventSupported: function (eventName) {
+            var isSupported = eventName in this.$element;
+            if (!isSupported) {
+                this.$element.setAttribute(eventName, 'return;');
+                isSupported = typeof this.$element[eventName] === 'function';
+            }
+            return isSupported;
+        },
+
+        move: function (e) {
+            if (!this.shown) {
+                return;
+            }
+
+            switch (e.keyCode) {
+                case 9: // tab
+                case 13: // enter
+                case 27: // escape
+                    e.preventDefault();
+                    break;
+
+                case 38: // up arrow
+                    // with the shiftKey (this is actually the left parenthesis)
+                    if (e.shiftKey) {
+                        return;
+                    }
+                    e.preventDefault();
+                    this.prev();
+                    break;
+
+                case 40: // down arrow
+                    // with the shiftKey (this is actually the right parenthesis)
+                    if (e.shiftKey) {
+                        return;
+                    }
+                    e.preventDefault();
+                    this.next();
+                    break;
+            }
+        },
+
+        keydown: function (e) {
+            /**
+             * Prevent to make an ajax call while copying and pasting.
+             *
+             * @author Simone Sacchi
+             * @version 2018/01/18
+             */
+            if (e.keyCode === 17) { // ctrl
+                return;
+            }
+            this.keyPressed = true;
+            this.suppressKeyPressRepeat = ~$.inArray(e.keyCode, [40, 38, 9, 13, 27]);
+            if (!this.shown && e.keyCode == 40) {
+                this.lookup();
+            } else {
+                this.move(e);
+            }
+        },
+
+        keypress: function (e) {
+            if (this.suppressKeyPressRepeat) {
+                return;
+            }
+            this.move(e);
+        },
+
+        input: function (e) {
+            // This is a fixed for IE10/11 that fires the input event when a placehoder is changed
+            // (https://connect.microsoft.com/IE/feedback/details/810538/ie-11-fires-input-event-on-focus)
+            var currentValue = this.$element.val() || this.$element.text();
+            if (this.value !== currentValue) {
+                this.value = currentValue;
                 this.lookup();
             }
-            a.stopPropagation(), a.preventDefault();
         },
-        focus:function() {
-            this.focused || (this.focused = !0, this.options.showHintOnFocus && this.lookup(""));
+
+        keyup: function (e) {
+            if (this.destroyed) {
+                return;
+            }
+            switch (e.keyCode) {
+                case 40: // down arrow
+                case 38: // up arrow
+                case 16: // shift
+                case 17: // ctrl
+                case 18: // alt
+                    break;
+
+                case 9: // tab
+                    if (!this.shown || (this.showHintOnFocus && !this.keyPressed)) {
+                        return;
+                    }
+                    this.select();
+                    break;
+                case 13: // enter
+                    if (!this.shown) {
+                        return;
+                    }
+                    this.select();
+                    break;
+
+                case 27: // escape
+                    if (!this.shown) {
+                        return;
+                    }
+                    this.hide();
+                    break;
+            }
+
         },
-        blur:function() {
-            this.focused = !1, !this.mousedover && this.shown && this.hide();
+
+        focus: function (e) {
+            if (!this.focused) {
+                this.focused = true;
+                this.keyPressed = false;
+                if (this.options.showHintOnFocus && this.skipShowHintOnFocus !== true) {
+                    if (this.options.showHintOnFocus === 'all') {
+                        this.lookup('');
+                    } else {
+                        this.lookup();
+                    }
+                }
+            }
+            if (this.skipShowHintOnFocus) {
+                this.skipShowHintOnFocus = false;
+            }
         },
-        click:function(a) {
-            a.stopPropagation(), a.preventDefault(), this.select(), this.$element.focus();
+
+        blur: function (e) {
+            if (!this.mousedover && !this.mouseddown && this.shown) {
+                if (this.selectOnBlur) {
+                    this.select();
+                }
+                this.hide();
+                this.focused = false;
+                this.keyPressed = false;
+            } else if (this.mouseddown) {
+                // This is for IE that blurs the input when user clicks on scroll.
+                // We set the focus back on the input and prevent the lookup to occur again
+                this.skipShowHintOnFocus = true;
+                this.$element.focus();
+                this.mouseddown = false;
+            }
         },
-        mouseenter:function(b) {
-            this.mousedover = !0, this.$menu.find(".active").removeClass("active"), a(b.currentTarget).addClass("active");
+
+        click: function (e) {
+            e.preventDefault();
+            this.skipShowHintOnFocus = true;
+            this.select();
+            this.$element.focus();
+            this.hide();
         },
-        mouseleave:function() {
-            this.mousedover = !1, !this.focused && this.shown && this.hide();
+
+        mouseenter: function (e) {
+            this.mousedover = true;
+            this.$menu.find('.active').removeClass('active');
+            $(e.currentTarget).addClass('active');
+        },
+
+        mouseleave: function (e) {
+            this.mousedover = false;
+            if (!this.focused && this.shown) {
+                this.hide();
+            }
+        },
+
+        /**
+         * We track the mousedown for IE. When clicking on the menu scrollbar, IE makes the input blur thus hiding the menu.
+         */
+        mousedown: function (e) {
+            this.mouseddown = true;
+            this.$menu.one('mouseup', function (e) {
+                // IE won't fire this, but FF and Chrome will so we reset our flag for them here
+                this.mouseddown = false;
+            }.bind(this));
+        },
+
+        touchstart: function (e) {
+            e.preventDefault();
+            this.$menu.find('.active').removeClass('active');
+            $(e.currentTarget).addClass('active');
+        },
+
+        touchend: function (e) {
+            e.preventDefault();
+            this.select();
+            this.$element.focus();
         }
+
     };
-    var c = a.fn.typeahead;
-    a.fn.typeahead = function(c) {
-        var d = arguments;
-        return "string" == typeof c && "getActive" == c ? this.data("active") :this.each(function() {
-            var e = a(this), f = e.data("typeahead"), g = "object" == typeof c && c;
-            f || e.data("typeahead", f = new b(this, g)), "string" == typeof c && (d.length > 1 ? f[c].apply(f, Array.prototype.slice.call(d, 1)) :f[c]());
+
+
+    /* TYPEAHEAD PLUGIN DEFINITION
+     * =========================== */
+
+    var old = $.fn.typeahead;
+
+    $.fn.typeahead = function (option) {
+        var arg = arguments;
+        if (typeof option == 'string' && option == 'getActive') {
+            return this.data('active');
+        }
+        return this.each(function () {
+            var $this = $(this);
+            var data = $this.data('typeahead');
+            var options = typeof option == 'object' && option;
+            if (!data) {
+                $this.data('typeahead', (data = new Typeahead(this, options)));
+            }
+            if (typeof option == 'string' && data[option]) {
+                if (arg.length > 1) {
+                    data[option].apply(data, Array.prototype.slice.call(arg, 1));
+                } else {
+                    data[option]();
+                }
+            }
         });
-    }, a.fn.typeahead.defaults = {
-        source:[],
-        items:10,
-        menu:'<ul class="typeahead dropdown-menu" role="listbox"></ul>',
-        item:'<li><a href="#" role="option"></a></li>',
-        minLength:1,
-        scrollHeight:0,
-        autoSelect:!0,
-        afterSelect:a.noop,
-        delay:0,
-        addItem:!1
-    }, a.fn.typeahead.Constructor = b, a.fn.typeahead.noConflict = function() {
-        return a.fn.typeahead = c, this;
-    }, a(document).on("focus.typeahead.data-api", '[data-provide="typeahead"]', function() {
-        var b = a(this);
-        b.data("typeahead") || b.typeahead(b.data());
+    };
+
+    Typeahead.defaults = {
+        source: [],
+        items: 8,
+        minLength: 1,
+        scrollHeight: 0,
+        autoSelect: true,
+        afterSelect: $.noop,
+        afterEmptySelect: $.noop,
+        addItem: false,
+        followLinkOnSelect: false,
+        delay: 0,
+        separator: 'category',
+        changeInputOnSelect: true,
+        changeInputOnMove: true,
+        openLinkInNewTab: false,
+        selectOnBlur: true,
+        showCategoryHeader: true,
+        theme: "bootstrap3",
+        themes: {
+        bootstrap3: {
+            menu: '<ul class="typeahead dropdown-menu" role="listbox"></ul>',
+            item: '<li><a class="dropdown-item" href="#" role="option"></a></li>',
+            itemContentSelector: "a",
+            headerHtml: '<li class="dropdown-header"></li>',
+            headerDivider: '<li class="divider" role="separator"></li>'
+        },
+        bootstrap4: {
+            menu: '<div class="typeahead dropdown-menu" role="listbox"></div>',
+            item: '<button class="dropdown-item" role="option"></button>',
+            itemContentSelector: '.dropdown-item',
+            headerHtml: '<h6 class="dropdown-header"></h6>',
+            headerDivider: '<div class="dropdown-divider"></div>'
+        }
+    }
+};
+
+    $.fn.typeahead.Constructor = Typeahead;
+
+    /* TYPEAHEAD NO CONFLICT
+     * =================== */
+
+    $.fn.typeahead.noConflict = function () {
+        $.fn.typeahead = old;
+        return this;
+    };
+
+
+    /* TYPEAHEAD DATA-API
+     * ================== */
+
+    $(document).on('focus.typeahead.data-api', '[data-provide="typeahead"]', function (e) {
+        var $this = $(this);
+        if ($this.data('typeahead')) {
+            return;
+        }
+        $this.typeahead($this.data());
     });
-});
+
+}));
