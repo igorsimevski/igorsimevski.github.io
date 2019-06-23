@@ -312,6 +312,7 @@ body.canvas-menu .nav-header {
         }
       }
       .navbar-nav .navbar-link {
+        padding: 20px 10px;
         color: $gray;
         &:hover {
           color: $link-color;
@@ -370,9 +371,6 @@ body.canvas-menu .nav-header {
         }
       }
     }
-  }
-  .navbar-scroll .navbar-nav > li > a {
-    padding: 20px 10px;
   }
   .navbar-expand-lg {
     border: none !important;
