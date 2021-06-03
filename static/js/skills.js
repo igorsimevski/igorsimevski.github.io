@@ -24,7 +24,7 @@ $(document).ready(function() {
         responsive: true,
         ticks: {min: 0, max: 100},
         lineArc: false,
-        pointLabels: {fontSize: 14},
+        pointLabels: {fontSize: 20},
       },
       legend: {
         display: false
