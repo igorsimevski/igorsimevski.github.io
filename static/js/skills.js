@@ -21,12 +21,6 @@ $(document).ready(function() {
     data: data,
     options: {
       responsive: true,
-      scales: {
-        ticks: {min: 0, max: 100},
-        pointLabels: {
-          fontSize: 20
-        }
-      },
       plugins: {
         legend: {
           display: false
