@@ -20,15 +20,18 @@ $(document).ready(function() {
     type: 'radar',
     data: data,
     options: {
-      scale: {
-        responsive: true,
+      responsive: true,
+      scales: {
         ticks: {min: 0, max: 100},
-        lineArc: false,
-        pointLabels: {fontSize: 20},
+        pointLabels: {
+          fontSize: 20
+        }
       },
-      legend: {
-        display: false
-      },
+      plugins: {
+        legend: {
+          display: false
+        }
+      }
     }
   });
 
