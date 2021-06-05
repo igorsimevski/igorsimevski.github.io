@@ -113,7 +113,7 @@
       $(requiredStyles).appendTo("head");
 
       if (this._cssAnimSupport && this.options.animation.length)
-        this._items.addClass("animated jp-hidden");
+        this._items.addClass("animate__animated jp-hidden");
       else this._items.hide();
 
     },
@@ -527,7 +527,7 @@
 
       if (this.options.minHeight) this._container.css("min-height", "");
       if (this._cssAnimSupport && this.options.animation.length)
-        this._items.removeClass("animated jp-hidden jp-invisible " + this.options.animation);
+        this._items.removeClass("animate__animated jp-hidden jp-invisible " + this.options.animation);
       else this._items.removeClass("jp-hidden").fadeTo(0, 1);
       this._holder.unbind("click.jPages").empty();
     }
