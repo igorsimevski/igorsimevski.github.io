@@ -1,6 +1,20 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
+    detail: One Inside AG
+    i18n: one_inside
+  desc:
+    detail: "Working on projects based on the Adobe AEM OSGi based CMS."
+    i18n: one_inside_desc
+  date:
+    detail: December 2019
+    i18n: one_inside_date
+  job:
+    detail: Senior Software Developer, Certified Adobe AEM Architect
+    i18n: one_inside_job
+  icon: fa-plus-square
+
+- name:
     detail: Sentice Tech LLC
     i18n: sentice
   desc:

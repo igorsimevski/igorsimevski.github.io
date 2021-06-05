@@ -41,6 +41,10 @@
   "career":{
     "my_career": "My Career",
     "my_education": "My Education",
+    "one_inside": "One Inside AG",
+    "one_inside_desc": "Working on projects based on the Adobe AEM CMS.",
+    "one_inside_date": "December 2019",
+    "one_inside_job": "Senior Software Developer, Certified Adobe AEM Architect",
     "sentice": "Sentice Tech LLC",
     "sentice_desc": "I started working as one of the first employees in Sentice Tech LLC, where besides leading several projects in several technologies, I am also involved in the setup and maintenance of all internal network and system architecture of the company.",
     "sentice_date": "August 2015",
