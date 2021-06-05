@@ -17,12 +17,12 @@
         {% assign loopindex = forloop.index | modulo: 3 %}
         {% if forloop.last %}
             {% if forloop.last == forloop.first %}
-        <div class="col-sm-4 offset-sm-4 wow zoomIn">
+        <div class="col-sm-4 offset-sm-4 wow animate__zoomIn">
                 {% else %}
-        <div class="col-sm-4 wow {% if loopindex != 0 %} offset-sm-4 fadeInRight {% else %} zoomIn {% endif %}">
+        <div class="col-sm-4 wow {% if loopindex != 0 %} offset-sm-4 animate__fadeInRight {% else %} animate__zoomIn {% endif %}">
             {% endif %}
         {% else %}
-        <div class="col-sm-4 wow {% if loopindex == 1 %} fadeInLeft {% else if loopindex == 2 %} zoomIn {% else %} fadeInRight {% endif %}">
+        <div class="col-sm-4 wow {% if loopindex == 1 %} animate__fadeInLeft {% else if loopindex == 2 %} animate__zoomIn {% else %} animate__fadeInRight {% endif %}">
         {% endif %}
         <div class="team-member">
             <h5><span class="navy">{{ link.last_name }}</span> {{ link.first_name }}</h5>

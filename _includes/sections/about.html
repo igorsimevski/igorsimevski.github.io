@@ -9,7 +9,7 @@
     <div class="row">
         <!-- first two icons -->
         {% for icon in site.author.skill_icon1 %}
-        <div class="col-sm-2 wow fadeInLeft" style="padding-top: 3em">
+        <div class="col-sm-2 wow animate__fadeInLeft" style="padding-top: 3em">
             <div class="team-member">
                 <div class="vote-icon" style="text-align: center">
                     <i class="fab {{ icon.name }}"></i>
@@ -19,7 +19,7 @@
         {% endfor %}
         <!-- avatar -->
         <div class="col-sm-4">
-            <div class="team-member wow zoomIn">
+            <div class="team-member wow animate__zoomIn">
                 <div id="avatar" style="height: 160px;">
                     <img data-src="{{ site.author.avatar | prepend: site.baseurl }}" class="lozad img-fluid rounded-circle" alt="avatar">
                 </div>
@@ -51,7 +51,7 @@
         </div>
         <!-- second two icons -->
         {% for icon in site.author.skill_icon2 %}
-        <div class="col-sm-2 wow fadeInRight" style="padding-top: 3em">
+        <div class="col-sm-2 wow animate__fadeInRight" style="padding-top: 3em">
             <div class="team-member">
                 <div class="vote-icon" style="text-align: center">
                     <i class="fab {{ icon.name }}"></i>
@@ -61,7 +61,7 @@
         {% endfor %}
     </div>
     <div class="row">
-        <div class="col-lg-8 offset-lg-2 text-center m-t-lg m-b-lg wow zoomIn">
+        <div class="col-lg-8 offset-lg-2 text-center m-t-lg m-b-lg wow animate__zoomIn">
             <p><span data-i18n="about_me.des">{{ site.author.desc }}</span></p>
         </div>
     </div>
