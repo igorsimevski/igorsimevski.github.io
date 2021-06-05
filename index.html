@@ -10,7 +10,7 @@ permalink: /
       <div class="navbar-header page-scroll">
         <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a>
       </div>
-      <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="visually-hiddensr-only">Toggle navigation</span>
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -19,9 +19,9 @@ permalink: /
           {% for section in site.data.landing %}
           <li class="nav-item">
             {% if section.page %}
-              <a class="nav-link active page-scroll" data-toggle="tab" href="{{ section.page}} ">
+              <a class="nav-link active page-scroll" data-bs-toggle="tab" href="{{ section.page}} ">
             {% else %}
-              <a class="nav-link page-scroll" data-toggle="tab" href="{{ section.id | prepend: '#'}} ">
+              <a class="nav-link page-scroll" data-bs-toggle="tab" href="{{ section.id | prepend: '#'}} ">
             {% endif %}
               <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
             </a>
